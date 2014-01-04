@@ -14,7 +14,7 @@ $senha = $_POST['senha'];
 if((!$usuario) || (!$senha)){
 
 	echo "Por favor, todos campos devem ser preenchidos! <br /><br />";
-	include "formulario_login.html";
+	include "formulario_login.php";
 
 }
 else{
@@ -32,7 +32,7 @@ else{
 
 				$$key = stripslashes( $val );
 
-			}
+			} #foreach
 
 			$_SESSION['usuario_id'] = $usuario_id;
 			$_SESSION['nome'] = $nome;
@@ -44,17 +44,15 @@ else{
 
 			header("Location: area_restrita.php");
 
-		}
+		} #while
 
-	}
+	} #if login_check
 	else{
+		echo "Voc&ecirc; n&atilde;o pode logar-se! Este usu&aacute;rio e/ou senha n&atilde;o s&atilde;o v&aacute;lidos!<br /> Por favor tente novamente!<br />";
 
-		echo "Voc&ecirc; n&atilde;o pode logar-se! Este usu&aacute;rio e/ou senha n&atilde;o s&atilde;o v&aacute;lidos!<br />
-			Por favor tente novamente!<br />";
+		include "formulario_login.php";
 
-		include "formulario_login.html";
-
-	}
+	}#if-else login_check
 }
 
 ?>

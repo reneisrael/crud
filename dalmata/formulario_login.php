@@ -25,7 +25,7 @@
                        
 <form action="verifica_usuario.php" method="post" name="" id="">
 		<div class="control-group">
-                <label class="control-label" for="email">Usu&aacute;rio</label>
+                <label class="control-label" for="usuario">Usu&aacute;rio</label>
                 <div class="controls">
                     <input  class="form-control" type="text" name="usuario" id="usuario">
                 </div>
@@ -40,8 +40,8 @@
          
          <br>
          <div class="form-actions">
-                <input type="hidden" name="Submit" value="Submit">
-                <button type="submit" class="btn btn-primary">Entrar</button>
+                <input name="entrar" value="login" type="hidden">
+				<button type="submit" class="btn btn-primary btn-block"> Entrar</button>
          </div>
 </form>
 

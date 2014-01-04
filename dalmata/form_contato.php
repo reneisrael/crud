@@ -34,13 +34,13 @@
                 </div>
             </div>
             <div class="control-group">
-                <label class="control-label" for="input2">Email</label>
+                <label class="control-label" for="contact_email">Email</label>
                 <div class="controls">
                     <input  class="form-control" type="text" name="contact_email" id="input2" placeholder="email@email.com">
                 </div>
             </div>
             <div class="control-group">
-                <label class="control-label" for="input3">Mensagem</label>
+                <label class="control-label" for="contact_message">Mensagem</label>
                 <div class="controls">
                     <textarea  class="form-control" name="contact_message" id="input3" rows="5" class="span5" placeholder="Mensagem"></textarea>
                 </div>

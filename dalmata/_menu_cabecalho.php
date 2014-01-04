@@ -77,9 +77,9 @@
 								
 								<a class="btn btn-link" href="gerar_nova_senha.php">Esqueci minha senha</a>
 					
-								<div class="formâ€�actions">
+								<div class="form-actions">
 									<input name="entrar" value="login" type="hidden">
-									<button type="submit" class="btn btn-primary btn-block"><span class="btn-label"><i class="glyphicon glyphicon-ok"></i></span> Entrar</button>
+									<button type="submit" class="btn btn-primary btn-block"> Entrar</button>
 								</div>								
 							</form>
 						</div>
