@@ -69,8 +69,8 @@
                                   bt_registrar.disabled = true;
                                 }
                                 ">
-                                Eu concordo com todos os <a href="#">Termos de Servi&ccedil;os</a></label> 
-                                <div class="form?actions">
+                                Eu concordo com todos os <a href="doc_termos_uso.php">Termos de Servi&ccedil;os</a> e a <a href="doc_privacidade.php">Política de Privacidade</a>.</label> 
+                                <div class="form-actions">
                                 	<input type="hidden" name="Submit" value="Enviar" />
                                 	<button name="bt_registrar" class="btn btn-primary" type="submit" disabled>Registrar</button> 
                                 </div>

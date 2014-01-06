@@ -1,3 +1,11 @@
+<?php/*
+ * Arquivo: index.php
+ * Criado por: Rafaela Vilela
+ * Versao: v.1
+ * Data: 05.jan.2014
+ * Objetivo: Pagina principal
+ */?>
+ 
 <body>
 <?php 
 	$cabecalho_title = "100 inc&ecirc;ndio";
