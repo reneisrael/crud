@@ -10,9 +10,8 @@
 <?php
 // check for form submission - if it doesn't exist then send back to contact form
 if (!isset($_POST["save"]) || $_POST["save"] != "contact") {
-   # header("Location: formulario_contato.php"); exit;
-   include("form_contato.php");
-
+	# header("Location: formulario_contato.php"); exit;
+	include("form_contato.php");
 	// send the user back to the form
 	exit;
 }

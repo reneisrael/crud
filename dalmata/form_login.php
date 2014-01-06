@@ -1,18 +1,20 @@
 <?php/*
- * Arquivo: formulario_login.php
+ * Arquivo: form_login.php
  * Criado por: Rafaela Vilela
  * Versao: v.1
- * Data: 01.jan.2014
- * Objetivo: Formulario para entrar do site
+ * Data: 06.jan.2014
+ * Objetivo: Formulario para entrar no site
  * Campos do form: usuario e senha
  * Parametros: $error / $msg
  */?>
  
 <body>
+<?php $cabecalho_title = "100 incendio - Login";?>
+
 <div class="alert info">
 
 <?php
-	//  sucesso - verde
+    //  sucesso - verde
     if ($error == 1) echo "<div class=\"alert alert-success\">".@$msg."</div>";  
   	
     //  erro - vermelho
@@ -24,7 +26,7 @@
 </div>
                        
 <form action="verifica_usuario.php" method="post" name="" id="">
-		<div class="control-group">
+	<div class="control-group">
                 <label class="control-label" for="usuario">Usu&aacute;rio</label>
                 <div class="controls">
                     <input  class="form-control" type="text" name="usuario" id="usuario">
@@ -41,7 +43,7 @@
          <br>
          <div class="form-actions">
                 <input name="entrar" value="login" type="hidden">
-				<button type="submit" class="btn btn-primary btn-block"> Entrar</button>
+		<button type="submit" class="btn btn-primary btn-block"> Entrar</button>
          </div>
 </form>
 

@@ -12,7 +12,7 @@
 					<ul class="nav navbar-nav navbar-right">
 						<li><a href="#">Facebook</a></li>
 						<li><a href="#">Twitter</a></li>
-                        <li><a href="https://plus.google.com/u/0/103874553075989327577">Google+</a></li>
+				                <li><a href="https://plus.google.com/u/0/103874553075989327577">Google+</a></li>
 					</ul></div></nav>
 </header>
 </html>

@@ -1,3 +1,12 @@
+<?php/*
+ * Arquivo: verifica_usuario.php
+ * Criado por: Rafaela Vilela
+ * Versao: v.1
+ * Data: 06.jan.2014
+ * Objetivo: Script para verificar login do usuario
+ * Parametros: usuario e senha
+ */?>
+ 
 <?php
 // check for form submission - if it doesn't exist then send back to contact form
 if (!isset($_POST["entrar"]) || $_POST["entrar"] != "login") {
@@ -12,10 +21,10 @@ $usuario = $_POST['usuario'];
 $senha = $_POST['senha'];
 
 if((!$usuario) || (!$senha)){
-
-	echo "Por favor, todos campos devem ser preenchidos! <br /><br />";
-	include "formulario_login.php";
-
+	$msg =  "Por favor, todos campos devem ser preenchidos! <br />";
+	$error = -1;
+	include("form_login.php");
+	exit;
 }
 else{
 
@@ -43,15 +52,14 @@ else{
 			mysql_query("UPDATE usuarios SET data_ultimo_login = now() WHERE usuario_id ='{$usuario_id}'");
 
 			header("Location: area_restrita.php");
-
 		} #while
 
 	} #if login_check
 	else{
-		echo "Voc&ecirc; n&atilde;o pode logar-se! Este usu&aacute;rio e/ou senha n&atilde;o s&atilde;o v&aacute;lidos!<br /> Por favor tente novamente!<br />";
-
-		include "formulario_login.php";
-
+	    $msg = "Voc&ecirc; n&atilde;o pode logar-se! Este usu&aacute;rio e/ou senha n&atilde;o s&atilde;o v&aacute;lidos!<br /> Por favor tente novamente!<br />";
+	    $error = -1;
+	    include("form_login.php");
+	    exit;
 	}#if-else login_check
 }
 

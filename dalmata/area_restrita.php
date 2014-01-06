@@ -1,13 +1,13 @@
 <body>
 <?php 
+
 	
 	session_start();
-	include "functions.php";
+	include("functions.php");
 	session_checker();
+	
 	$cabecalho_title = "100 inc&ecirc;ndio - Area administrativa";
 	include("_menu_cabecalho.php");
-
-
 echo "(Mensagem exemplo - ---  --)<br /><br />";
 echo "<hr /><br /><br />";
 

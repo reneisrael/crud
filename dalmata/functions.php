@@ -4,7 +4,7 @@ function session_checker(){
 
 	if(!isset($_SESSION['usuario_id'])){
 
-		header ("Location:formulario_login.html");
+		header ("Location:form_login.php");
 
 		exit(); 
 	}

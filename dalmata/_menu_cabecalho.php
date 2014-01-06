@@ -59,7 +59,7 @@
 		       <?php 
 		       if($_SESSION['nivel_usuario'] == 0) { ?>
 		       <ul class="nav navbar-nav navbar-right">
-					<li><a href="formulario_cadastro.php">Registrar</a></li>
+					<li><a href="form_cadastro.php">Registrar</a></li>
                   	<li class="divider-vertical"></li>
 					<li class="dropdown">
 						<a class="dropdown-toggle" href="#" data-toggle="dropdown">Entrar <strong class="caret"></strong></a>
@@ -75,7 +75,7 @@
 									<input class="form-control" placeholder="senha" id="senha" name="senha" type="password">
 								</div>
 								
-								<a class="btn btn-link" href="gerar_nova_senha.php">Esqueci minha senha</a>
+								<a class="btn btn-link" href="form_nova_senha.php">Esqueci minha senha</a>
 					
 								<div class="form-actions">
 									<input name="entrar" value="login" type="hidden">
@@ -95,7 +95,7 @@
                     </span></a>
                         <ul class="dropdown-menu">
                             <li><a href="configuracoes.php"><span class="glyphicon glyphicon-cog text-primary"></span> Configura&ccedil;&otilde;es</a></li>
-                            <li><a href="formulario_suporte.php"><span class="glyphicon glyphicon-envelope text-primary"></span> Suporte</a></li>
+                            <li><a href="form_contato.php"><span class="glyphicon glyphicon-envelope text-primary"></span> Suporte</a></li>
                             <li class="divider"></li>
                             <li><a href="logout.php"><span class="glyphicon glyphicon-off text-primary"></span> Sair</a></li>
                         </ul>

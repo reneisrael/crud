@@ -31,7 +31,7 @@
 		$msg = "<strong>Seu cadastro foi ativado com sucesso!</strong>";
 	}
 	
-	include("formulario_login.php");
+	include("form_login.php");
 
 	include("_menu_rodape.php");
 ?>
