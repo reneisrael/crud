@@ -1,15 +1,6 @@
-<?php/*
- * Arquivo: cadastra.php
- * Criado por: Rafaela Vilela
- * Versao: v.1
- * Data: 03.jan.2014
- * Objetivo: Script 
- * Parametros: nome, sobrenome, email, usuario, info
- * Saída: email para novo usuario
- */?>
 <body>
 <?php 
-	$cabecalho_title = "100 incendio";
+	$cabecalho_title = "Nova senha";
 	include("_menu_cabecalho.php");
 
 	include "config.php";

@@ -1,16 +1,6 @@
-<?php/*
- * Arquivo: formulario_senha_perdida.php
- * Criado por: Rafaela Vilela
- * Versao: v.1
- * Data: 01.jan.2014
- * Objetivo: Formulario para recuperar senha
- * Campos do form: email
- * Parametros: $error / $msg
- */?>
-
 <body>
 <?php 
-	$cabecalho_title = "100 incendio";
+	$cabecalho_title = "Nova senha";
 	include("_menu_cabecalho.php");
 ?>
 

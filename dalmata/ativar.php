@@ -1,12 +1,3 @@
-<?php/*
- * Arquivo: ativar.php
- * Criado por: Rafaela Vilela
- * Versao: v.1
- * Data: 01.jan.2014
- * Objetivo: Script de ativacao de cadastro
- * Include: config.php 
- */?>
- 
 <body>
 <?php 
 	$cabecalho_title = "100 incendio - Contato";

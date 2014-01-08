@@ -1,15 +1,6 @@
-<?php/*
- * Arquivo: form_contato.php
- * Criado por: Rafaela Vilela
- * Versao: v.1
- * Data: 01.jan.2014
- * Objetivo: Formulario para contato
- * Campos do form: nome, email, mensagem
- * Parametros: $error / $msg
- */?>
 <body>
 <?php 
-	$cabecalho_title = "100 incendio - Contato";
+	$cabecalho_title = "Contato";
 	include("_menu_cabecalho.php");
 ?>
 

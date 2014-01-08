@@ -1,12 +1,3 @@
-<?php/*
- * Arquivo: verifica_usuario.php
- * Criado por: Rafaela Vilela
- * Versao: v.1
- * Data: 06.jan.2014
- * Objetivo: Script para verificar login do usuario
- * Parametros: usuario e senha
- */?>
- 
 <?php
 // check for form submission - if it doesn't exist then send back to contact form
 if (!isset($_POST["entrar"]) || $_POST["entrar"] != "login") {

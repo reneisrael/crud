@@ -1,16 +1,7 @@
-<?php/*
- * Arquivo: send_contato.php
- * Criado por: Rafaela Vilela
- * Versao: v.1
- * Data: 01.jan.2014
- * Objetivo: Script de envio de msg de contato
- * Saída: email para contato@100incendio.com
- */?>
-
 <?php
 // check for form submission - if it doesn't exist then send back to contact form
 if (!isset($_POST["save"]) || $_POST["save"] != "contact") {
-	# header("Location: formulario_contato.php"); exit;
+	# header("Location: form_contato.php"); exit;
 	include("form_contato.php");
 	// send the user back to the form
 	exit;
@@ -63,7 +54,7 @@ $envio = mail ("rafaela.vilela@gmail.com", "Nova Mensagem de Contato", $email_co
 	} 
 	else {
 		$error = -1;
-		$msg = "A mensagem não pode ser enviada";
+		$msg = "A mensagem n&atilde;o pode ser enviada";
  		#echo("Location: formulario_contato.php?e=".urlencode("A mensagem não pode ser enviada"));;
  	} #if-else envio
  	

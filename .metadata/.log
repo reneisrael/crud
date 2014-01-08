@@ -1,0 +1,518 @@
+!SESSION 2014-01-06 22:49:14.641 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.7.0_45
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=pt_BR
+Framework arguments:  -showlocation
+Command-line arguments:  -os win32 -ws win32 -arch x86 -showlocation
+
+!ENTRY org.eclipse.ui 4 4 2014-01-06 22:54:17.103
+!MESSAGE Part already exists in page layout: org.zend.php.framework.ui.views.mvc.
+
+!ENTRY org.eclipse.ui 4 4 2014-01-06 22:54:17.251
+!MESSAGE Unable to find Action Set: adt.actionSet.avdManager
+
+!ENTRY org.eclipse.jface 2 0 2014-01-06 22:54:31.022
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2014-01-06 22:54:31.022
+!MESSAGE A conflict occurred for SHIFT+DEL:
+Binding(SHIFT+DEL,
+	ParameterizedCommand(Command(org.eclipse.datatools.sqltools.result.removeAllInstances,Remove All Visible Results,
+		,
+		Category(org.eclipse.datatools.sqltools.result.category,SQL Results View,null,true),
+		,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(SHIFT+DEL,
+	ParameterizedCommand(Command(org.eclipse.graphiti.ui.internal.action.RemoveAction,Remove,
+		Remove selected Pictogram Elements,
+		Category(org.eclipse.graphiti.ui.Graphiti_Category,Edit,Graphiti Diagram Editor,true),
+		,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(SHIFT+DEL,
+	ParameterizedCommand(Command(org.eclipse.ui.edit.cut,Cut,
+		Cut the selection to the clipboard,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.handlers.WidgetMethodHandler@17fb4f8,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.dialogAndWindow,,,system)
+
+!ENTRY org.eclipse.ui.workbench 2 0 2014-01-06 22:54:31.166
+!MESSAGE A handler conflict occurred.  This may disable some commands.
+!SUBENTRY 1 org.eclipse.ui.workbench 2 0 2014-01-06 22:54:31.166
+!MESSAGE Conflict for 'org.eclipse.dltk.ui.edit.text.script.refactor.quickMenu':
+HandlerActivation(commandId=org.eclipse.dltk.ui.edit.text.script.refactor.quickMenu,
+	handler=org.eclipse.dltk.internal.ui.actions.refactoring.RefactorActionGroup$3@1f717e,
+	expression=AndExpression(ActivePartExpression(org.eclipse.php.internal.ui.explorer.PHPExplorerPart@1951332),WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@bdcfdb)),sourcePriority=1064960)
+HandlerActivation(commandId=org.eclipse.dltk.ui.edit.text.script.refactor.quickMenu,
+	handler=org.eclipse.dltk.internal.ui.actions.refactoring.RefactorActionGroup$3@541184,
+	expression=AndExpression(ActivePartExpression(org.eclipse.php.internal.ui.explorer.PHPExplorerPart@1951332),WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@bdcfdb)),sourcePriority=1064960)
+
+!ENTRY org.eclipse.osgi 2 0 2014-01-06 22:54:38.402
+!MESSAGE While loading class "com.zend.php.debug.core.communication.AdvancedDebuggerCommunicationDaemon", thread "Thread[Worker-5,5,main]" timed out waiting (5320ms) for thread "Thread[Worker-4,5,main]" to finish starting bundle "org.eclipse.php.debug.core_3.2.0.201310241251 [336]". To avoid deadlock, thread "Thread[Worker-5,5,main]" is proceeding but "com.zend.php.debug.core.communication.AdvancedDebuggerCommunicationDaemon" may not be fully initialized.
+!STACK 0
+org.osgi.framework.BundleException: State change in progress for bundle "reference:file:plugins/org.eclipse.php.debug.core_3.2.0.201310241251.jar" by thread "Worker-4".
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.beginStateChange(AbstractBundle.java:1088)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.start(AbstractBundle.java:298)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:440)
+	at org.eclipse.osgi.internal.loader.BundleLoader.setLazyTrigger(BundleLoader.java:263)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:107)
+	at org.eclipse.osgi.baseadaptor.loader.ClasspathManager.findLocalClass(ClasspathManager.java:469)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.findLocalClass(DefaultClassLoader.java:216)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:395)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:464)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:421)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:412)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.loadClass(DefaultClassLoader.java:107)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.eclipse.osgi.internal.loader.BundleLoader.loadClass(BundleLoader.java:340)
+	at org.eclipse.osgi.framework.internal.core.BundleHost.loadClass(BundleHost.java:229)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.loadClass(AbstractBundle.java:1212)
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:174)
+	at org.eclipse.core.internal.registry.ExtensionRegistry.createExecutableExtension(ExtensionRegistry.java:905)
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:243)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:55)
+	at org.eclipse.php.internal.debug.daemon.communication.CommunicationDaemonRegistry$CommunicationDaemonFactory$1.run(CommunicationDaemonRegistry.java:190)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.php.internal.debug.daemon.communication.CommunicationDaemonRegistry$CommunicationDaemonFactory.createDaemon(CommunicationDaemonRegistry.java:186)
+	at org.eclipse.php.internal.debug.daemon.communication.CommunicationDaemonRegistry.getBestMatchCommunicationDaemons(CommunicationDaemonRegistry.java:114)
+	at org.eclipse.php.internal.debug.daemon.DaemonPlugin.startDaemons(DaemonPlugin.java:85)
+	at org.eclipse.php.internal.debug.daemon.DaemonPlugin$1.run(DaemonPlugin.java:67)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+Caused by: org.eclipse.osgi.framework.internal.core.AbstractBundle$BundleStatusException
+	... 27 more
+Root exception:
+org.eclipse.osgi.framework.internal.core.AbstractBundle$BundleStatusException
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.beginStateChange(AbstractBundle.java:1088)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.start(AbstractBundle.java:298)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:440)
+	at org.eclipse.osgi.internal.loader.BundleLoader.setLazyTrigger(BundleLoader.java:263)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:107)
+	at org.eclipse.osgi.baseadaptor.loader.ClasspathManager.findLocalClass(ClasspathManager.java:469)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.findLocalClass(DefaultClassLoader.java:216)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:395)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:464)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:421)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:412)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.loadClass(DefaultClassLoader.java:107)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.eclipse.osgi.internal.loader.BundleLoader.loadClass(BundleLoader.java:340)
+	at org.eclipse.osgi.framework.internal.core.BundleHost.loadClass(BundleHost.java:229)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.loadClass(AbstractBundle.java:1212)
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:174)
+	at org.eclipse.core.internal.registry.ExtensionRegistry.createExecutableExtension(ExtensionRegistry.java:905)
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:243)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:55)
+	at org.eclipse.php.internal.debug.daemon.communication.CommunicationDaemonRegistry$CommunicationDaemonFactory$1.run(CommunicationDaemonRegistry.java:190)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.php.internal.debug.daemon.communication.CommunicationDaemonRegistry$CommunicationDaemonFactory.createDaemon(CommunicationDaemonRegistry.java:186)
+	at org.eclipse.php.internal.debug.daemon.communication.CommunicationDaemonRegistry.getBestMatchCommunicationDaemons(CommunicationDaemonRegistry.java:114)
+	at org.eclipse.php.internal.debug.daemon.DaemonPlugin.startDaemons(DaemonPlugin.java:85)
+	at org.eclipse.php.internal.debug.daemon.DaemonPlugin$1.run(DaemonPlugin.java:67)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.zend.php.common 1 0 2014-01-06 22:54:59.911
+!MESSAGE No response for 12008msec
+Thread[main,6,main]
+ org.eclipse.swt.internal.win32.OS.DispatchMessageW(Native Method)
+ org.eclipse.swt.internal.win32.OS.DispatchMessage(OS.java:2546)
+ org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3756)
+ org.eclipse.ui.internal.Workbench.runEventLoop(Workbench.java:2701)
+ org.eclipse.ui.internal.Workbench.runUI(Workbench.java:2665)
+ org.eclipse.ui.internal.Workbench.access$4(Workbench.java:2499)
+ org.eclipse.ui.internal.Workbench$5.run(Workbench.java:679)
+ org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+ org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:668)
+ org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+ org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:124)
+ org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+ org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+ org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+ org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:353)
+ org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:180)
+ sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+ sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+ sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+ java.lang.reflect.Method.invoke(Unknown Source)
+ org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:629)
+ org.eclipse.equinox.launcher.Main.basicRun(Main.java:584)
+ org.eclipse.equinox.launcher.Main.run(Main.java:1438)
+
+
+!ENTRY org.eclipse.egit.ui 2 0 2014-01-06 22:56:44.697
+!MESSAGE Warning: EGit couldn't detect the installation path "gitPrefix" of native Git. Hence EGit can't respect system level
+Git settings which might be configured in ${gitPrefix}/etc/gitconfig under the native Git installation directory.
+The most important of these settings is core.autocrlf. Git for Windows by default sets this parameter to true in
+this system level configuration. The Git installation location can be configured on the
+Team > Git > Configuration preference page's 'System Settings' tab.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.egit.ui 2 0 2014-01-06 22:56:44.699
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\rafavi84'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.zend.php.common 1 0 2014-01-06 22:58:53.967
+!MESSAGE No response for 6023msec
+Thread[main,6,main]
+ java.util.zip.ZipFile.read(Native Method)
+ java.util.zip.ZipFile.access$1400(Unknown Source)
+ java.util.zip.ZipFile$ZipFileInputStream.read(Unknown Source)
+ java.util.zip.ZipFile$ZipFileInflaterInputStream.fill(Unknown Source)
+ java.util.zip.InflaterInputStream.read(Unknown Source)
+ org.eclipse.osgi.baseadaptor.bundlefile.ZipBundleEntry$ZipBundleEntryInputStream.read(ZipBundleEntry.java:157)
+ org.eclipse.osgi.internal.baseadaptor.AdaptorUtil.getBytes(AdaptorUtil.java:247)
+ org.eclipse.osgi.baseadaptor.bundlefile.BundleEntry.getBytes(BundleEntry.java:96)
+ org.eclipse.osgi.baseadaptor.loader.ClasspathManager.findClassImpl(ClasspathManager.java:548)
+ org.eclipse.osgi.baseadaptor.loader.ClasspathManager.findLocalClassImpl(ClasspathManager.java:492)
+ org.eclipse.osgi.baseadaptor.loader.ClasspathManager.findLocalClass(ClasspathManager.java:465)
+ org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.findLocalClass(DefaultClassLoader.java:216)
+ org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:395)
+ org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:464)
+ org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:421)
+ org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:412)
+ org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.loadClass(DefaultClassLoader.java:107)
+ java.lang.ClassLoader.loadClass(Unknown Source)
+ org.eclipse.php.internal.ui.viewsupport.SelectionListenerWithASTManager.addListener(SelectionListenerWithASTManager.java:233)
+ org.eclipse.php.internal.ui.editor.PHPStructuredEditor.installOccurrencesFinder(PHPStructuredEditor.java:3200)
+ org.eclipse.php.internal.ui.editor.PHPStructuredEditor.createPartControl(PHPStructuredEditor.java:2272)
+ org.eclipse.ui.internal.EditorReference.createPartHelper(EditorReference.java:670)
+ org.eclipse.ui.internal.EditorReference.createPart(EditorReference.java:465)
+ org.eclipse.ui.internal.WorkbenchPartReference.getPart(WorkbenchPartReference.java:595)
+ org.eclipse.ui.internal.EditorReference.getEditor(EditorReference.java:289)
+ org.eclipse.ui.internal.WorkbenchPage.busyOpenEditorBatched(WorkbenchPage.java:2958)
+ org.eclipse.ui.internal.WorkbenchPage.busyOpenEditor(WorkbenchPage.java:2863)
+ org.eclipse.ui.internal.WorkbenchPage.access$11(WorkbenchPage.java:2855)
+ org.eclipse.ui.internal.WorkbenchPage$10.run(WorkbenchPage.java:2806)
+ org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:70)
+ org.eclipse.ui.internal.WorkbenchPage.openEditor(WorkbenchPage.java:2802)
+ org.eclipse.ui.internal.WorkbenchPage.openEditor(WorkbenchPage.java:2786)
+ org.eclipse.ui.internal.WorkbenchPage.openEditor(WorkbenchPage.java:2777)
+ org.eclipse.dltk.internal.ui.editor.EditorUtility.openInEditor(EditorUtility.java:413)
+ org.eclipse.dltk.internal.ui.editor.EditorUtility.openInEditor(EditorUtility.java:177)
+ org.eclipse.php.internal.ui.actions.OpenActionUtil.open(OpenActionUtil.java:54)
+ org.eclipse.php.internal.ui.actions.OpenAction.run(OpenAction.java:177)
+ org.eclipse.php.internal.ui.actions.OpenAction.run(OpenAction.java:151)
+ org.eclipse.php.internal.ui.actions.SelectionDispatchAction.dispatchRun(SelectionDispatchAction.java:190)
+ org.eclipse.php.internal.ui.actions.SelectionDispatchAction.run(SelectionDispatchAction.java:168)
+ org.eclipse.php.internal.ui.actions.PHPExplorerActionGroup.handleOpen(PHPExplorerActionGroup.java:171)
+ org.eclipse.dltk.internal.ui.scriptview.ScriptExplorerPart$4.open(ScriptExplorerPart.java:678)
+ org.eclipse.jface.viewers.StructuredViewer$2.run(StructuredViewer.java:866)
+ org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+ org.eclipse.ui.internal.JFaceUtil$1.run(JFaceUtil.java:49)
+ org.eclipse.jface.util.SafeRunnable.run(SafeRunnable.java:175)
+ org.eclipse.jface.viewers.StructuredViewer.fireOpen(StructuredViewer.java:864)
+ org.eclipse.jface.viewers.StructuredViewer.handleOpen(StructuredViewer.java:1152)
+ org.eclipse.jface.viewers.StructuredViewer$6.handleOpen(StructuredViewer.java:1256)
+ org.eclipse.jface.util.OpenStrategy.fireOpenEvent(OpenStrategy.java:275)
+ org.eclipse.jface.util.OpenStrategy.access$2(OpenStrategy.java:269)
+ org.eclipse.jface.util.OpenStrategy$1.handleEvent(OpenStrategy.java:309)
+ org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+ org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1053)
+ org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4169)
+ org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3758)
+ org.eclipse.ui.internal.Workbench.runEventLoop(Workbench.java:2701)
+ org.eclipse.ui.internal.Workbench.runUI(Workbench.java:2665)
+ org.eclipse.ui.internal.Workbench.access$4(Workbench.java:2499)
+ org.eclipse.ui.internal.Workbench$5.run(Workbench.java:679)
+ org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+ org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:668)
+ org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+ org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:124)
+ org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+ org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+ org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+ org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:353)
+ org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:180)
+ sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+ sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+ sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+ java.lang.reflect.Method.invoke(Unknown Source)
+ org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:629)
+ org.eclipse.equinox.launcher.Main.basicRun(Main.java:584)
+ org.eclipse.equinox.launcher.Main.run(Main.java:1438)
+
+
+!ENTRY org.eclipse.dltk.core 2 0 2014-01-06 23:00:49.853
+!MESSAGE Error decoding problem idenfier "570425394"
+
+!ENTRY org.eclipse.dltk.core 2 0 2014-01-06 23:13:12.220
+!MESSAGE Error decoding problem idenfier "536871091"
+
+!ENTRY org.zend.php.common 1 0 2014-01-07 14:50:06.590
+!MESSAGE No response for 44686msec
+Thread[main,6,main]
+ org.eclipse.jface.text.source.AnnotationModel$RegionIterator.<init>(AnnotationModel.java:79)
+ org.eclipse.jface.text.source.AnnotationModel.getRegionAnnotationIterator(AnnotationModel.java:732)
+ org.eclipse.jface.text.source.AnnotationModel.getAnnotationIterator(AnnotationModel.java:700)
+ org.eclipse.jface.text.source.AnnotationRulerColumn.doPaint1(AnnotationRulerColumn.java:727)
+ org.eclipse.jface.text.source.AnnotationRulerColumn.doubleBufferPaint(AnnotationRulerColumn.java:541)
+ org.eclipse.jface.text.source.AnnotationRulerColumn.access$3(AnnotationRulerColumn.java:517)
+ org.eclipse.jface.text.source.AnnotationRulerColumn$1.paintControl(AnnotationRulerColumn.java:289)
+ org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:230)
+ org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+ org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1053)
+ org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1077)
+ org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1062)
+ org.eclipse.swt.widgets.Composite.WM_PAINT(Composite.java:1564)
+ org.eclipse.swt.widgets.Control.windowProc(Control.java:4585)
+ org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:341)
+ org.eclipse.swt.widgets.Display.windowProc(Display.java:4989)
+ org.eclipse.swt.internal.win32.OS.DispatchMessageW(Native Method)
+ org.eclipse.swt.internal.win32.OS.DispatchMessage(OS.java:2546)
+ org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3756)
+ org.eclipse.ui.internal.Workbench.runEventLoop(Workbench.java:2701)
+ org.eclipse.ui.internal.Workbench.runUI(Workbench.java:2665)
+ org.eclipse.ui.internal.Workbench.access$4(Workbench.java:2499)
+ org.eclipse.ui.internal.Workbench$5.run(Workbench.java:679)
+ org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+ org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:668)
+ org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+ org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:124)
+ org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+ org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+ org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+ org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:353)
+ org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:180)
+ sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+ sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+ sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+ java.lang.reflect.Method.invoke(Unknown Source)
+ org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:629)
+ org.eclipse.equinox.launcher.Main.basicRun(Main.java:584)
+ org.eclipse.equinox.launcher.Main.run(Main.java:1438)
+
+
+!ENTRY org.zend.php.common 1 0 2014-01-07 16:02:34.153
+!MESSAGE No response for 8757msec
+Thread[main,6,main]
+ java.util.zip.ZipFile.getEntry(Native Method)
+ java.util.zip.ZipFile.getEntry(Unknown Source)
+ org.eclipse.osgi.baseadaptor.bundlefile.ZipBundleFile.getZipEntry(ZipBundleFile.java:117)
+ org.eclipse.osgi.baseadaptor.bundlefile.ZipBundleFile.getEntry(ZipBundleFile.java:247)
+ org.eclipse.osgi.framework.internal.protocol.bundleentry.Handler.findBundleEntry(Handler.java:42)
+ org.eclipse.osgi.framework.internal.core.BundleResourceHandler.openConnection(BundleResourceHandler.java:175)
+ java.net.URL.openConnection(Unknown Source)
+ org.eclipse.core.runtime.internal.adaptor.URLConverterImpl.toFileURL(URLConverterImpl.java:32)
+ org.eclipse.core.runtime.FileLocator.toFileURL(FileLocator.java:206)
+ org.eclipse.jface.resource.URLImageDescriptor.getFilePath(URLImageDescriptor.java:137)
+ org.eclipse.jface.resource.URLImageDescriptor.createImage(URLImageDescriptor.java:157)
+ org.eclipse.jface.resource.ImageDescriptor.createResource(ImageDescriptor.java:165)
+ org.eclipse.jface.resource.DeviceResourceManager.allocate(DeviceResourceManager.java:56)
+ org.eclipse.jface.resource.AbstractResourceManager.create(AbstractResourceManager.java:88)
+ org.eclipse.jface.resource.LocalResourceManager.allocate(LocalResourceManager.java:82)
+ org.eclipse.jface.resource.AbstractResourceManager.create(AbstractResourceManager.java:88)
+ org.eclipse.jface.resource.ResourceManager.createImageWithDefault(ResourceManager.java:192)
+ org.eclipse.jface.action.ActionContributionItem.updateImages(ActionContributionItem.java:1044)
+ org.eclipse.jface.action.ActionContributionItem.update(ActionContributionItem.java:783)
+ org.eclipse.jface.action.ActionContributionItem.fill(ActionContributionItem.java:342)
+ org.eclipse.jface.action.SubContributionItem.fill(SubContributionItem.java:77)
+ org.eclipse.jface.action.ToolBarManager.update(ToolBarManager.java:353)
+ org.eclipse.ui.internal.ViewPane.updateActionBars(ViewPane.java:452)
+ org.eclipse.ui.internal.ViewActionBars.updateActionBars(ViewActionBars.java:59)
+ org.eclipse.ui.part.PageBookView.showPageRec(PageBookView.java:1007)
+ org.eclipse.ui.views.contentoutline.ContentOutline.showPageRec(ContentOutline.java:251)
+ org.eclipse.ui.part.PageBookView.partActivated(PageBookView.java:765)
+ org.eclipse.ui.views.contentoutline.ContentOutline.partBroughtToTop(ContentOutline.java:212)
+ org.eclipse.ui.part.PageBookView$4.partBroughtToTop(PageBookView.java:1027)
+ org.eclipse.ui.internal.PartListenerList2$2.run(PartListenerList2.java:85)
+ org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+ org.eclipse.core.runtime.Platform.run(Platform.java:857)
+ org.eclipse.ui.internal.PartListenerList2.fireEvent(PartListenerList2.java:55)
+ org.eclipse.ui.internal.PartListenerList2.firePartBroughtToTop(PartListenerList2.java:83)
+ org.eclipse.ui.internal.PartService.firePartBroughtToTop(PartService.java:212)
+ org.eclipse.ui.internal.WorkbenchPagePartList.firePartBroughtToTop(WorkbenchPagePartList.java:76)
+ org.eclipse.ui.internal.WorkbenchPagePartList.fireActiveEditorChanged(WorkbenchPagePartList.java:52)
+ org.eclipse.ui.internal.PartList.setActiveEditor(PartList.java:162)
+ org.eclipse.ui.internal.WorkbenchPage.makeActiveEditor(WorkbenchPage.java:1368)
+ org.eclipse.ui.internal.WorkbenchPage.setActivePart(WorkbenchPage.java:3642)
+ org.eclipse.ui.internal.WorkbenchPage.internalActivate(WorkbenchPage.java:700)
+ org.eclipse.ui.internal.WorkbenchPage.activate(WorkbenchPage.java:672)
+ org.eclipse.ui.internal.WorkbenchPage.busyOpenEditorBatched(WorkbenchPage.java:2970)
+ org.eclipse.ui.internal.WorkbenchPage.busyOpenEditor(WorkbenchPage.java:2863)
+ org.eclipse.ui.internal.WorkbenchPage.access$11(WorkbenchPage.java:2855)
+ org.eclipse.ui.internal.WorkbenchPage$10.run(WorkbenchPage.java:2806)
+ org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:70)
+ org.eclipse.ui.internal.WorkbenchPage.openEditor(WorkbenchPage.java:2802)
+ org.eclipse.ui.internal.WorkbenchPage.openEditor(WorkbenchPage.java:2786)
+ org.eclipse.ui.internal.WorkbenchPage.openEditor(WorkbenchPage.java:2777)
+ org.eclipse.dltk.internal.ui.editor.EditorUtility.openInEditor(EditorUtility.java:413)
+ org.eclipse.dltk.internal.ui.editor.EditorUtility.openInEditor(EditorUtility.java:177)
+ org.eclipse.php.internal.ui.actions.OpenActionUtil.open(OpenActionUtil.java:54)
+ org.eclipse.php.internal.ui.actions.OpenAction.run(OpenAction.java:177)
+ org.eclipse.php.internal.ui.actions.OpenAction.run(OpenAction.java:151)
+ org.eclipse.php.internal.ui.actions.SelectionDispatchAction.dispatchRun(SelectionDispatchAction.java:190)
+ org.eclipse.php.internal.ui.actions.SelectionDispatchAction.run(SelectionDispatchAction.java:168)
+ org.eclipse.php.internal.ui.actions.PHPExplorerActionGroup.handleOpen(PHPExplorerActionGroup.java:171)
+ org.eclipse.dltk.internal.ui.scriptview.ScriptExplorerPart$4.open(ScriptExplorerPart.java:678)
+ org.eclipse.jface.viewers.StructuredViewer$2.run(StructuredViewer.java:866)
+ org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+ org.eclipse.ui.internal.JFaceUtil$1.run(JFaceUtil.java:49)
+ org.eclipse.jface.util.SafeRunnable.run(SafeRunnable.java:175)
+ org.eclipse.jface.viewers.StructuredViewer.fireOpen(StructuredViewer.java:864)
+ org.eclipse.jface.viewers.StructuredViewer.handleOpen(StructuredViewer.java:1152)
+ org.eclipse.jface.viewers.StructuredViewer$6.handleOpen(StructuredViewer.java:1256)
+ org.eclipse.jface.util.OpenStrategy.fireOpenEvent(OpenStrategy.java:275)
+ org.eclipse.jface.util.OpenStrategy.access$2(OpenStrategy.java:269)
+ org.eclipse.jface.util.OpenStrategy$1.handleEvent(OpenStrategy.java:309)
+ org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+ org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1053)
+ org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4169)
+ org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3758)
+ org.eclipse.ui.internal.Workbench.runEventLoop(Workbench.java:2701)
+ org.eclipse.ui.internal.Workbench.runUI(Workbench.java:2665)
+ org.eclipse.ui.internal.Workbench.access$4(Workbench.java:2499)
+ org.eclipse.ui.internal.Workbench$5.run(Workbench.java:679)
+ org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+ org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:668)
+ org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+ org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:124)
+ org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+ org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+ org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+ org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:353)
+ org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:180)
+ sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+ sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+ sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+ java.lang.reflect.Method.invoke(Unknown Source)
+ org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:629)
+ org.eclipse.equinox.launcher.Main.basicRun(Main.java:584)
+ org.eclipse.equinox.launcher.Main.run(Main.java:1438)
+
+
+!ENTRY org.zend.php.common 1 0 2014-01-07 16:02:54.002
+!MESSAGE No response for 5590msec
+Thread[main,6,main]
+ org.eclipse.swt.internal.win32.OS.PeekMessageW(Native Method)
+ org.eclipse.swt.internal.win32.OS.PeekMessage(OS.java:3129)
+ org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3753)
+ org.eclipse.ui.internal.Workbench.runEventLoop(Workbench.java:2701)
+ org.eclipse.ui.internal.Workbench.runUI(Workbench.java:2665)
+ org.eclipse.ui.internal.Workbench.access$4(Workbench.java:2499)
+ org.eclipse.ui.internal.Workbench$5.run(Workbench.java:679)
+ org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+ org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:668)
+ org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+ org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:124)
+ org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+ org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+ org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+ org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:353)
+ org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:180)
+ sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+ sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+ sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+ java.lang.reflect.Method.invoke(Unknown Source)
+ org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:629)
+ org.eclipse.equinox.launcher.Main.basicRun(Main.java:584)
+ org.eclipse.equinox.launcher.Main.run(Main.java:1438)
+
+
+!ENTRY org.zend.php.common 1 0 2014-01-07 22:30:34.493
+!MESSAGE No response for 2543msec
+Thread[main,6,main]
+ org.eclipse.swt.widgets.Link.computeSize(Link.java:186)
+ org.eclipse.swt.layout.GridData.computeSize(GridData.java:491)
+ org.eclipse.swt.layout.GridLayout.layout(GridLayout.java:218)
+ org.eclipse.swt.layout.GridLayout.computeSize(GridLayout.java:163)
+ org.eclipse.swt.widgets.Composite.computeSize(Composite.java:233)
+ org.eclipse.swt.layout.GridData.computeSize(GridData.java:491)
+ org.eclipse.swt.layout.GridLayout.layout(GridLayout.java:218)
+ org.eclipse.swt.layout.GridLayout.layout(GridLayout.java:194)
+ org.eclipse.swt.widgets.Composite.updateLayout(Composite.java:1263)
+ org.eclipse.swt.widgets.Composite.updateLayout(Composite.java:1270)
+ org.eclipse.swt.widgets.Composite.updateLayout(Composite.java:1249)
+ org.eclipse.swt.widgets.Composite.layout(Composite.java:664)
+ org.eclipse.swt.widgets.Display.runSettings(Display.java:4233)
+ org.eclipse.swt.widgets.Display.messageProc(Display.java:3355)
+ org.eclipse.swt.internal.win32.OS.DispatchMessageW(Native Method)
+ org.eclipse.swt.internal.win32.OS.DispatchMessage(OS.java:2546)
+ org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3756)
+ org.eclipse.ui.internal.Workbench.runEventLoop(Workbench.java:2701)
+ org.eclipse.ui.internal.Workbench.runUI(Workbench.java:2665)
+ org.eclipse.ui.internal.Workbench.access$4(Workbench.java:2499)
+ org.eclipse.ui.internal.Workbench$5.run(Workbench.java:679)
+ org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+ org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:668)
+ org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+ org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:124)
+ org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+ org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+ org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+ org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:353)
+ org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:180)
+ sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+ sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+ sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+ java.lang.reflect.Method.invoke(Unknown Source)
+ org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:629)
+ org.eclipse.equinox.launcher.Main.basicRun(Main.java:584)
+ org.eclipse.equinox.launcher.Main.run(Main.java:1438)
+
+
+!ENTRY org.zend.php.common 1 0 2014-01-07 23:47:26.366
+!MESSAGE No response for 6027msec
+Thread[main,6,main]
+ org.eclipse.swt.internal.win32.OS.DefWindowProcW(Native Method)
+ org.eclipse.swt.internal.win32.OS.DefWindowProc(OS.java:2541)
+ org.eclipse.swt.widgets.Scrollable.callWindowProc(Scrollable.java:80)
+ org.eclipse.swt.widgets.Control.windowProc(Control.java:4623)
+ org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:341)
+ org.eclipse.swt.widgets.Display.windowProc(Display.java:4976)
+ org.eclipse.swt.internal.win32.OS.BeginPaint(Native Method)
+ org.eclipse.swt.widgets.Composite.WM_PAINT(Composite.java:1431)
+ org.eclipse.swt.widgets.Control.windowProc(Control.java:4585)
+ org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:341)
+ org.eclipse.swt.widgets.Display.windowProc(Display.java:4976)
+ org.eclipse.swt.internal.win32.OS.RedrawWindow(Native Method)
+ org.eclipse.swt.widgets.Control.update(Control.java:4380)
+ org.eclipse.swt.widgets.Control.update(Control.java:4370)
+ org.eclipse.swt.custom.StyledText.handleKey(StyledText.java:5908)
+ org.eclipse.swt.custom.StyledText.handleKeyDown(StyledText.java:5937)
+ org.eclipse.swt.custom.StyledText$7.handleEvent(StyledText.java:5629)
+ org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+ org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1053)
+ org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1077)
+ org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1062)
+ org.eclipse.swt.widgets.Widget.sendKeyEvent(Widget.java:1104)
+ org.eclipse.swt.widgets.Widget.sendKeyEvent(Widget.java:1100)
+ org.eclipse.swt.widgets.Widget.wmChar(Widget.java:1521)
+ org.eclipse.swt.widgets.Control.WM_CHAR(Control.java:4640)
+ org.eclipse.swt.widgets.Canvas.WM_CHAR(Canvas.java:345)
+ org.eclipse.swt.widgets.Control.windowProc(Control.java:4528)
+ org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:341)
+ org.eclipse.swt.widgets.Display.windowProc(Display.java:4976)
+ org.eclipse.swt.internal.win32.OS.DispatchMessageW(Native Method)
+ org.eclipse.swt.internal.win32.OS.DispatchMessage(OS.java:2546)
+ org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3756)
+ org.eclipse.ui.internal.Workbench.runEventLoop(Workbench.java:2701)
+ org.eclipse.ui.internal.Workbench.runUI(Workbench.java:2665)
+ org.eclipse.ui.internal.Workbench.access$4(Workbench.java:2499)
+ org.eclipse.ui.internal.Workbench$5.run(Workbench.java:679)
+ org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+ org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:668)
+ org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+ org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:124)
+ org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+ org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+ org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+ org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:353)
+ org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:180)
+ sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+ sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+ sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+ java.lang.reflect.Method.invoke(Unknown Source)
+ org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:629)
+ org.eclipse.equinox.launcher.Main.basicRun(Main.java:584)
+ org.eclipse.equinox.launcher.Main.run(Main.java:1438)
+
+
+!ENTRY org.eclipse.dltk.core 2 0 2014-01-07 23:48:09.438
+!MESSAGE Error decoding problem idenfier "1610612990"

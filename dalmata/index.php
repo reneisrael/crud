@@ -1,9 +1,5 @@
 <body>
-<?php 
-	$cabecalho_title = "100 inc&ecirc;ndio";
-	include("_menu_cabecalho.php");
-?>
-
+<?php include("_menu_cabecalho.php");?>
 <br>
 <br>
 

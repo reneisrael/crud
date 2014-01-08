@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title><?php print $cabecalho_title;?></title>
+  <title>100inc&ecirc;ndio - <?php print $cabecalho_title;?></title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="">
-  <meta name="author" content="">
+  <meta name="author" content="100incendio">
+  <meta http-equiv='Content-Type' content='text/html; charset=utf-8'/>
 
     <!--link rel="stylesheet/less" href="less/bootstrap.less" type="text/css" /-->
 	<!--link rel="stylesheet/less" href="less/responsive.less" type="text/css" /-->
@@ -40,76 +41,63 @@
 				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 					<ul class="nav navbar-nav">
 						<li class="active"><a href="index.php"><span class="glyphicon glyphicon-home text-primary"></span> Home</a></li>
-						<li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-pencil text-primary"></span> Cadastros<strong class="caret"></strong></a>
-							<ul class="dropdown-menu">
-								<li><a href="#">Action</a></li>
-								<li><a href="#">Another action</a></li>
-								<li><a href="#">Something else here</a></li>
-								<li class="divider"></li>
-								<li><a href="#">Separated link</a></li>
-								<li class="divider"></li>
-								<li><a href="#">One more separated link</a></li>
-								</ul>
-						</li>
-                        <li><a href="#"> <span class="glyphicon glyphicon-file text-primary"></span> Relat&oacute;rios</a></li>
-                        <li><a href="form_contato.php"><span class="glyphicon glyphicon-envelope text-primary"></span> Contato</a></li>
 					</ul>
 				
 				
 		       <?php 
-		       if($_SESSION['nivel_usuario'] == 0) { ?>
+       		if($_SESSION['nivel_usuario'] == 0) { ?>
+       			<ul class="nav navbar-nav">
+       				<li><a href="sobre.php"><span class="glyphicon glyphicon-file text-primary"></span> Sobre</a></li>
+                    <li><a href="form_contato.php"><span class="glyphicon glyphicon-envelope text-primary"></span> Contato</a></li>
+               </ul>        
 		       <ul class="nav navbar-nav navbar-right">
 					<li><a href="form_cadastro.php">Registrar</a></li>
                   	<li class="divider-vertical"></li>
 					<li class="dropdown">
 						<a class="dropdown-toggle" href="#" data-toggle="dropdown">Entrar <strong class="caret"></strong></a>
 						<div class="dropdown-menu" style="padding: 15px; padding-bottom: 0px;">
-							<form role="form" method="post" action="verifica_usuario.php" accept-charset="UTF-8" name="" id="">
-								<div class="input-group">	
-									<span class="input-group-addon"><span class="glyphicon glyphicon-user"></span></span>
-									<input  class="form-control" placeholder="usuario" id="usuario" name="usuario" type="text">
-								</div>
-								
-								<div class="input-group">
-									<span class="input-group-addon"><span class="glyphicon glyphicon-lock"></span></span>
-									<input class="form-control" placeholder="senha" id="senha" name="senha" type="password">
-								</div>
-								
-								<a class="btn btn-link" href="form_nova_senha.php">Esqueci minha senha</a>
-					
-								<div class="form-actions">
-									<input name="entrar" value="login" type="hidden">
-									<button type="submit" class="btn btn-primary btn-block"> Entrar</button>
-								</div>								
-							</form>
+					<form role="form" method="post" action="verifica_usuario.php" accept-charset="UTF-8" name="" id="">
+						<div class="input-group">	
+							<span class="input-group-addon"><span class="glyphicon glyphicon-user"></span></span>
+							<input  class="form-control" placeholder="usuario" id="usuario" name="usuario" type="text">
 						</div>
-					</li>
-				</ul>	
-		       <?php } ?>
-				
-			   <?php if($_SESSION['nivel_usuario'] == 1) { ?>
+						
+						<div class="input-group">
+							<span class="input-group-addon"><span class="glyphicon glyphicon-lock"></span></span>
+							<input class="form-control" placeholder="senha" id="senha" name="senha" type="password">
+						</div>
+						
+						<a class="btn btn-link" href="form_nova_senha.php">Esqueci minha senha</a>
+			
+						<div class="form-actions">
+							<input name="entrar" value="login" type="hidden">
+							<button type="submit" class="btn btn-primary btn-block"> Entrar</button>
+						</div>								
+					</form>
+				</div>
+			</li>
+		</ul>	
+       <?php } ?>
+		
+	   <?php if($_SESSION['nivel_usuario'] == 1) { ?>
                 <ul class="nav navbar-nav navbar-right">
                     <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown"> 
                     <span class="glyphicon glyphicon-user text-primary"> 
                     	<?php print $_SESSION['nome'];?><strong class="caret"></strong>
                     </span></a>
                         <ul class="dropdown-menu">
-                            <li><a href="configuracoes.php"><span class="glyphicon glyphicon-cog text-primary"></span> Configura&ccedil;&otilde;es</a></li>
-                            <li><a href="form_contato.php"><span class="glyphicon glyphicon-envelope text-primary"></span> Suporte</a></li>
+                            <li><a href="configuracoes.php"><span class="glyphicon glyphicon-cog text-primary"></span> Configurações</a></li>
+                            <li><a href="form_suporte.php"><span class="glyphicon glyphicon-envelope text-primary"></span> Suporte</a></li>
                             <li class="divider"></li>
                             <li><a href="logout.php"><span class="glyphicon glyphicon-off text-primary"></span> Sair</a></li>
                         </ul>
                     </li>
                 </ul>
-		       <?php } ?>
-
-				
-             		
-				</div>
+		<?php } ?>
+	</div>
 								
 </nav>
-	<br>
-	<br>
-	<br>
-	<br>
+	<br/>
+	<br/>
+	<br/>
 </header>

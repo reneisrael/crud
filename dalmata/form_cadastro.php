@@ -1,15 +1,6 @@
-<?php/*
- * Arquivo: form_cadastro.php
- * Criado por: Rafaela Vilela
- * Versao: v.1
- * Data: 06.jan.2014
- * Objetivo: Formulario para se cadastrar no site
- * Campos do form: nome, sobrenome, email, info_empresa e usuario
- * Parametros: $error / $msg
- */?>
 <body>
 <?php 
-	$cabecalho_title = "100 incendio - Cadastro";
+	$cabecalho_title = "Cadastro";
 	include("_menu_cabecalho.php");
 ?>
 
@@ -23,11 +14,8 @@
     if ($error == -1)  echo "<div class=\"alert alert-danger\">".@$msg."</div>"; 
 ?>
 
-        <div class="page-header">
-            <h1>Registro de novo usu&aacute;rio</h1>
-        </div>
-        
-        
+    <div class="page-header"><h1>Registro de novo usu&aacute;rio</h1></div>
+            
     <div class="row-fluid">
         <div class="span12">
             <div class="span6">
