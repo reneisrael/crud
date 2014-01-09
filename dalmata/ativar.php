@@ -1,6 +1,6 @@
 <body>
 <?php 
-	$cabecalho_title = "100 incendio - Contato";
+	$cabecalho_title = "Ativa cadastro";
 	include("_menu_cabecalho.php");
 	
 	include("config.php");

@@ -35,17 +35,20 @@
 <header class="container">
 
 <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-			<div class="navbar-header"> 
-				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">100 inc&ecirc;ndio</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button> <a class="navbar-brand" href="index.php">100 inc&ecirc;ndio</a></div>
+	<div class="navbar-header"> 
+		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> 
+		<span class="sr-only">100inc&ecirc;ndio</span>
+		</button> 
+		<a class="navbar-brand">100inc&ecirc;ndio</a>
+	</div>
 				
-				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-					<ul class="nav navbar-nav">
-						<li class="active"><a href="index.php"><span class="glyphicon glyphicon-home text-primary"></span> Home</a></li>
-					</ul>
-				
-				
-		       <?php 
+		<?php 
        		if($_SESSION['nivel_usuario'] == 0) { ?>
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav">
+					<li><a href="index.php"><span class="glyphicon glyphicon-home text-primary"></span> Home</a></li>
+				</ul>
+					       		
        			<ul class="nav navbar-nav">
        				<li><a href="sobre.php"><span class="glyphicon glyphicon-file text-primary"></span> Sobre</a></li>
                     <li><a href="form_contato.php"><span class="glyphicon glyphicon-envelope text-primary"></span> Contato</a></li>
@@ -55,31 +58,37 @@
                   	<li class="divider-vertical"></li>
 					<li class="dropdown">
 						<a class="dropdown-toggle" href="#" data-toggle="dropdown">Entrar <strong class="caret"></strong></a>
+				
 						<div class="dropdown-menu" style="padding: 15px; padding-bottom: 0px;">
-					<form role="form" method="post" action="verifica_usuario.php" accept-charset="UTF-8" name="" id="">
-						<div class="input-group">	
-							<span class="input-group-addon"><span class="glyphicon glyphicon-user"></span></span>
-							<input  class="form-control" placeholder="usuario" id="usuario" name="usuario" type="text">
+							<form role="form" method="post" action="verifica_usuario.php" accept-charset="UTF-8" name="" id="">
+								<div class="input-group">	
+									<span class="input-group-addon"><span class="glyphicon glyphicon-user"></span></span>
+									<input  class="form-control" placeholder="usuario" id="usuario" name="usuario" type="text">
+								</div>
+								
+								<div class="input-group">
+									<span class="input-group-addon"><span class="glyphicon glyphicon-lock"></span></span>
+									<input class="form-control" placeholder="senha" id="senha" name="senha" type="password">
+								</div>
+								
+								<a class="btn btn-link" href="form_nova_senha.php">Esqueci minha senha</a>
+					
+								<div class="form-actions">
+									<input name="entrar" value="login" type="hidden">
+									<button type="submit" class="btn btn-primary btn-block"> Entrar</button>
+								</div>								
+							</form>
 						</div>
-						
-						<div class="input-group">
-							<span class="input-group-addon"><span class="glyphicon glyphicon-lock"></span></span>
-							<input class="form-control" placeholder="senha" id="senha" name="senha" type="password">
-						</div>
-						
-						<a class="btn btn-link" href="form_nova_senha.php">Esqueci minha senha</a>
-			
-						<div class="form-actions">
-							<input name="entrar" value="login" type="hidden">
-							<button type="submit" class="btn btn-primary btn-block"> Entrar</button>
-						</div>								
-					</form>
-				</div>
-			</li>
-		</ul>	
+					</li>
+				</ul>	
        <?php } ?>
 		
 	   <?php if($_SESSION['nivel_usuario'] == 1) { ?>
+	   			
+				<ul class="nav navbar-nav">
+					<li><a href="area_restrita.php"><span class="glyphicon glyphicon-home text-primary"></span> Painel Principal</a></li>
+				</ul>
+					
                 <ul class="nav navbar-nav navbar-right">
                     <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown"> 
                     <span class="glyphicon glyphicon-user text-primary"> 

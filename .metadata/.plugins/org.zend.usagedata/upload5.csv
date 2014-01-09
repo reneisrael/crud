@@ -1,0 +1,176 @@
+monitorId,attribute1,attribute2,attribute3,attribute4,time
+org.zend.commandUsageMonitor,executed,org.eclipse.php.editor,,"org.eclipse.ui.file.save",1389212764722
+org.zend.commandUsageMonitor,executed,org.eclipse.php.editor,,"org.eclipse.ui.edit.paste",1389212937397
+org.zend.commandUsageMonitor,executed,org.eclipse.php.editor,,"org.eclipse.ui.edit.paste",1389212940572
+org.zend.commandUsageMonitor,executed,org.eclipse.php.editor,,"org.eclipse.ui.edit.paste",1389212943207
+org.zend.commandUsageMonitor,executed,org.eclipse.php.editor,,"org.eclipse.ui.edit.copy",1389212961904
+org.zend.commandUsageMonitor,executed,org.eclipse.php.editor,,"org.eclipse.ui.edit.paste",1389212963807
+org.zend.commandUsageMonitor,executed,org.eclipse.php.editor,,"org.eclipse.ui.edit.paste",1389212966684
+org.zend.commandUsageMonitor,executed,org.eclipse.php.editor,,"org.eclipse.ui.edit.paste",1389212969985
+org.zend.commandUsageMonitor,executed,org.eclipse.php.editor,,"org.eclipse.ui.edit.copy",1389212975625
+org.zend.commandUsageMonitor,executed,org.eclipse.php.editor,,"org.eclipse.ui.edit.paste",1389212976995
+org.zend.commandUsageMonitor,executed,org.eclipse.php.editor,,"org.eclipse.ui.edit.paste",1389212979220
+org.zend.commandUsageMonitor,executed,org.eclipse.php.editor,,"org.eclipse.ui.edit.paste",1389212980756
+org.zend.commandUsageMonitor,executed,org.eclipse.php.editor,,"org.eclipse.ui.edit.paste",1389212997093
+org.zend.commandUsageMonitor,executed,org.eclipse.php.editor,,"org.eclipse.ui.edit.paste",1389212998246
+org.zend.commandUsageMonitor,executed,org.eclipse.php.editor,,"org.eclipse.ui.edit.paste",1389212999686
+org.zend.commandUsageMonitor,executed,org.eclipse.php.editor,,"org.eclipse.ui.edit.paste",1389213001175
+org.zend.commandUsageMonitor,executed,org.eclipse.php.editor,,"org.eclipse.ui.edit.paste",1389213003316
+org.zend.commandUsageMonitor,executed,org.eclipse.php.editor,,"org.eclipse.ui.edit.paste",1389213046666
+org.zend.commandUsageMonitor,executed,org.eclipse.php.editor,,"org.eclipse.ui.file.save",1389213092046
+org.zend.commandUsageMonitor,executed,org.eclipse.php.editor,,"org.eclipse.ui.edit.copy",1389213156300
+org.zend.commandUsageMonitor,executed,org.eclipse.php.editor,,"org.eclipse.ui.edit.paste",1389213161095
+org.zend.commandUsageMonitor,executed,org.eclipse.php.editor,,"org.eclipse.ui.file.saveAll",1389213176115
+org.zend.commandUsageMonitor,executed,org.eclipse.php.editor,,"org.eclipse.ui.edit.cut",1389213201091
+org.zend.commandUsageMonitor,executed,org.eclipse.php.editor,,"org.eclipse.ui.file.saveAll",1389213203102
+org.zend.commandUsageMonitor,executed,org.eclipse.php.editor,,"org.eclipse.ui.edit.cut",1389213254673
+org.zend.commandUsageMonitor,executed,org.eclipse.php.editor,,"org.eclipse.ui.edit.paste",1389213256764
+org.zend.commandUsageMonitor,executed,org.eclipse.php.editor,,"org.eclipse.ui.file.saveAll",1389213259803
+org.zend.commandUsageMonitor,executed,org.eclipse.php.editor,,"org.eclipse.ui.edit.undo",1389213282524
+org.zend.commandUsageMonitor,executed,org.eclipse.php.editor,,"org.eclipse.ui.edit.paste",1389213296071
+org.zend.commandUsageMonitor,executed,org.eclipse.php.editor,,"org.eclipse.ui.edit.undo",1389213297352
+org.zend.commandUsageMonitor,executed,org.eclipse.php.editor,,"org.eclipse.ui.edit.paste",1389213304650
+org.zend.commandUsageMonitor,executed,org.eclipse.php.editor,,"org.eclipse.ui.file.saveAll",1389213313579
+org.zend.commandUsageMonitor,executed,org.eclipse.php.editor,,"org.eclipse.ui.file.saveAll",1389213345179
+org.zend.commandUsageMonitor,executed,org.eclipse.php.editor,,"org.eclipse.ui.edit.copy",1389213393845
+org.zend.commandUsageMonitor,executed,org.eclipse.php.editor,,"org.eclipse.ui.edit.copy",1389213399171
+org.zend.commandUsageMonitor,executed,org.eclipse.php.editor,,"org.eclipse.ui.edit.paste",1389213407971
+org.zend.commandUsageMonitor,executed,org.eclipse.php.editor,,"org.eclipse.ui.file.saveAll",1389213409444
+org.zend.commandUsageMonitor,no handler,org.eclipse.php.editor,There is no handler to execute for command org.jkiss.dbeaver.core.resultset.row.edit.inline,"org.jkiss.dbeaver.core.resultset.row.edit.inline",1389213444917
+org.zend.commandUsageMonitor,no handler,org.eclipse.php.editor,There is no handler to execute for command org.jkiss.dbeaver.core.resultset.row.edit.inline,"org.jkiss.dbeaver.core.resultset.row.edit.inline",1389213444917
+org.zend.commandUsageMonitor,no handler,org.eclipse.php.editor,There is no handler to execute for command org.jkiss.dbeaver.core.resultset.toggleMode,"org.jkiss.dbeaver.core.resultset.toggleMode",1389213463109
+org.zend.commandUsageMonitor,no handler,org.eclipse.php.editor,There is no handler to execute for command org.jkiss.dbeaver.core.resultset.toggleMode,"org.jkiss.dbeaver.core.resultset.toggleMode",1389213463109
+org.zend.commandUsageMonitor,no handler,org.eclipse.php.editor,There is no handler to execute for command org.jkiss.dbeaver.core.resultset.row.edit.inline,"org.jkiss.dbeaver.core.resultset.row.edit.inline",1389213469694
+org.zend.commandUsageMonitor,no handler,org.eclipse.php.editor,There is no handler to execute for command org.jkiss.dbeaver.core.resultset.row.edit.inline,"org.jkiss.dbeaver.core.resultset.row.edit.inline",1389213469695
+org.zend.commandUsageMonitor,no handler,org.eclipse.php.editor,There is no handler to execute for command org.jkiss.dbeaver.core.resultset.toggleMode,"org.jkiss.dbeaver.core.resultset.toggleMode",1389213475469
+org.zend.commandUsageMonitor,no handler,org.eclipse.php.editor,There is no handler to execute for command org.jkiss.dbeaver.core.resultset.toggleMode,"org.jkiss.dbeaver.core.resultset.toggleMode",1389213475470
+org.zend.commandUsageMonitor,no handler,org.eclipse.php.editor,There is no handler to execute for command org.jkiss.dbeaver.core.resultset.toggleMode,"org.jkiss.dbeaver.core.resultset.toggleMode",1389213475751
+org.zend.commandUsageMonitor,no handler,org.eclipse.php.editor,There is no handler to execute for command org.jkiss.dbeaver.core.resultset.toggleMode,"org.jkiss.dbeaver.core.resultset.toggleMode",1389213475752
+org.zend.commandUsageMonitor,no handler,org.eclipse.php.editor,There is no handler to execute for command org.jkiss.dbeaver.core.resultset.toggleMode,"org.jkiss.dbeaver.core.resultset.toggleMode",1389213475938
+org.zend.commandUsageMonitor,no handler,org.eclipse.php.editor,There is no handler to execute for command org.jkiss.dbeaver.core.resultset.toggleMode,"org.jkiss.dbeaver.core.resultset.toggleMode",1389213475938
+org.zend.commandUsageMonitor,no handler,org.eclipse.php.editor,There is no handler to execute for command org.jkiss.dbeaver.core.resultset.toggleMode,"org.jkiss.dbeaver.core.resultset.toggleMode",1389213476330
+org.zend.commandUsageMonitor,no handler,org.eclipse.php.editor,There is no handler to execute for command org.jkiss.dbeaver.core.resultset.toggleMode,"org.jkiss.dbeaver.core.resultset.toggleMode",1389213476330
+org.zend.commandUsageMonitor,no handler,org.eclipse.php.editor,There is no handler to execute for command org.jkiss.dbeaver.core.resultset.row.edit.inline,"org.jkiss.dbeaver.core.resultset.row.edit.inline",1389213477891
+org.zend.commandUsageMonitor,no handler,org.eclipse.php.editor,There is no handler to execute for command org.jkiss.dbeaver.core.resultset.row.edit.inline,"org.jkiss.dbeaver.core.resultset.row.edit.inline",1389213477891
+org.zend.commandUsageMonitor,no handler,org.eclipse.php.editor,There is no handler to execute for command org.jkiss.dbeaver.core.resultset.toggleMode,"org.jkiss.dbeaver.core.resultset.toggleMode",1389213479363
+org.zend.commandUsageMonitor,no handler,org.eclipse.php.editor,There is no handler to execute for command org.jkiss.dbeaver.core.resultset.toggleMode,"org.jkiss.dbeaver.core.resultset.toggleMode",1389213479363
+org.zend.commandUsageMonitor,executed,org.eclipse.php.editor,,"org.eclipse.ui.file.save",1389213489422
+org.zend.commandUsageMonitor,no handler,org.eclipse.php.editor,There is no handler to execute for command org.jkiss.dbeaver.core.resultset.row.edit.inline,"org.jkiss.dbeaver.core.resultset.row.edit.inline",1389213610917
+org.zend.commandUsageMonitor,no handler,org.eclipse.php.editor,There is no handler to execute for command org.jkiss.dbeaver.core.resultset.row.edit.inline,"org.jkiss.dbeaver.core.resultset.row.edit.inline",1389213610917
+org.zend.contentAssistMonitor,h4,false,,"2154",1389213610923
+org.zend.commandUsageMonitor,executed,org.eclipse.php.editor,,"org.eclipse.ui.edit.cut",1389213619306
+org.zend.commandUsageMonitor,executed,org.eclipse.php.editor,,"org.eclipse.ui.edit.paste",1389213621453
+org.zend.commandUsageMonitor,executed,org.eclipse.php.editor,,"org.eclipse.ui.edit.undo",1389213622017
+org.zend.commandUsageMonitor,no handler,org.eclipse.php.editor,There is no handler to execute for command org.jkiss.dbeaver.core.resultset.row.edit.inline,"org.jkiss.dbeaver.core.resultset.row.edit.inline",1389213623535
+org.zend.commandUsageMonitor,no handler,org.eclipse.php.editor,There is no handler to execute for command org.jkiss.dbeaver.core.resultset.row.edit.inline,"org.jkiss.dbeaver.core.resultset.row.edit.inline",1389213623535
+org.zend.commandUsageMonitor,executed,org.eclipse.php.editor,,"org.eclipse.ui.edit.paste",1389213626681
+org.zend.commandUsageMonitor,no handler,org.eclipse.php.editor,There is no handler to execute for command org.jkiss.dbeaver.core.resultset.row.edit.inline,"org.jkiss.dbeaver.core.resultset.row.edit.inline",1389213630433
+org.zend.commandUsageMonitor,no handler,org.eclipse.php.editor,There is no handler to execute for command org.jkiss.dbeaver.core.resultset.row.edit.inline,"org.jkiss.dbeaver.core.resultset.row.edit.inline",1389213630433
+org.zend.commandUsageMonitor,no handler,org.eclipse.php.editor,There is no handler to execute for command org.jkiss.dbeaver.core.resultset.toggleMode,"org.jkiss.dbeaver.core.resultset.toggleMode",1389213631526
+org.zend.commandUsageMonitor,no handler,org.eclipse.php.editor,There is no handler to execute for command org.jkiss.dbeaver.core.resultset.toggleMode,"org.jkiss.dbeaver.core.resultset.toggleMode",1389213631526
+org.zend.commandUsageMonitor,no handler,org.eclipse.php.editor,There is no handler to execute for command org.jkiss.dbeaver.core.resultset.toggleMode,"org.jkiss.dbeaver.core.resultset.toggleMode",1389213634678
+org.zend.commandUsageMonitor,no handler,org.eclipse.php.editor,There is no handler to execute for command org.jkiss.dbeaver.core.resultset.toggleMode,"org.jkiss.dbeaver.core.resultset.toggleMode",1389213634678
+org.zend.commandUsageMonitor,executed,org.eclipse.php.editor,,"org.eclipse.ui.file.saveAll",1389213664072
+org.zend.commandUsageMonitor,executed,org.eclipse.php.editor,,"org.eclipse.ui.edit.undo",1389213677998
+org.zend.commandUsageMonitor,executed,org.eclipse.php.editor,,"org.eclipse.ui.file.save",1389213679989
+org.zend.commandUsageMonitor,executed,org.eclipse.php.editor,,"org.eclipse.ui.edit.paste",1389213716579
+org.zend.commandUsageMonitor,executed,org.eclipse.php.editor,,"org.eclipse.ui.file.saveAll",1389213722571
+org.zend.commandUsageMonitor,executed,org.eclipse.php.editor,,"org.eclipse.ui.edit.cut",1389213758065
+org.zend.commandUsageMonitor,no handler,org.eclipse.php.editor,There is no handler to execute for command org.jkiss.dbeaver.core.resultset.row.edit.inline,"org.jkiss.dbeaver.core.resultset.row.edit.inline",1389213759929
+org.zend.commandUsageMonitor,no handler,org.eclipse.php.editor,There is no handler to execute for command org.jkiss.dbeaver.core.resultset.row.edit.inline,"org.jkiss.dbeaver.core.resultset.row.edit.inline",1389213759929
+org.zend.commandUsageMonitor,executed,org.eclipse.php.editor,,"org.eclipse.ui.edit.paste",1389213761047
+org.zend.commandUsageMonitor,no handler,org.eclipse.php.editor,There is no handler to execute for command org.jkiss.dbeaver.core.resultset.toggleMode,"org.jkiss.dbeaver.core.resultset.toggleMode",1389213763680
+org.zend.commandUsageMonitor,no handler,org.eclipse.php.editor,There is no handler to execute for command org.jkiss.dbeaver.core.resultset.toggleMode,"org.jkiss.dbeaver.core.resultset.toggleMode",1389213763681
+org.zend.commandUsageMonitor,no handler,org.eclipse.php.editor,There is no handler to execute for command org.jkiss.dbeaver.core.resultset.row.edit.inline,"org.jkiss.dbeaver.core.resultset.row.edit.inline",1389213764742
+org.zend.commandUsageMonitor,no handler,org.eclipse.php.editor,There is no handler to execute for command org.jkiss.dbeaver.core.resultset.row.edit.inline,"org.jkiss.dbeaver.core.resultset.row.edit.inline",1389213764742
+org.zend.commandUsageMonitor,no handler,org.eclipse.php.editor,There is no handler to execute for command org.jkiss.dbeaver.core.resultset.toggleMode,"org.jkiss.dbeaver.core.resultset.toggleMode",1389213768100
+org.zend.commandUsageMonitor,no handler,org.eclipse.php.editor,There is no handler to execute for command org.jkiss.dbeaver.core.resultset.toggleMode,"org.jkiss.dbeaver.core.resultset.toggleMode",1389213768100
+org.zend.commandUsageMonitor,executed,org.eclipse.php.editor,,"org.eclipse.ui.file.save",1389213769685
+org.zend.commandUsageMonitor,executed,org.eclipse.php.editor,,"org.eclipse.ui.file.save",1389213772827
+org.zend.commandUsageMonitor,executed,org.eclipse.php.editor,,"org.eclipse.ui.file.save",1389214593599
+org.zend.commandUsageMonitor,executed,org.eclipse.php.editor,,"org.eclipse.ui.file.save",1389214618932
+org.zend.commandUsageMonitor,executed,org.eclipse.php.editor,,"org.eclipse.ui.edit.paste",1389215007130
+org.zend.commandUsageMonitor,executed,org.eclipse.php.editor,,"org.eclipse.ui.edit.paste",1389215011766
+org.zend.commandUsageMonitor,executed,org.eclipse.php.editor,,"AUTOGEN:::org.eclipse.php.editor.ruler.actions/org.eclipse.php.internal.ui.editor.PhpSelectRulerAction",1389215016745
+org.zend.commandUsageMonitor,executed,org.eclipse.php.editor,,"org.eclipse.ui.file.saveAll",1389215021364
+org.zend.commandUsageMonitor,executed,org.eclipse.php.editor,,"org.eclipse.ui.edit.undo",1389215028723
+org.zend.commandUsageMonitor,executed,org.eclipse.php.editor,,"org.eclipse.ui.edit.undo",1389215029491
+org.zend.commandUsageMonitor,executed,org.eclipse.php.editor,,"org.eclipse.ui.file.save",1389215033432
+org.zend.commandUsageMonitor,executed,org.eclipse.php.editor,,"org.eclipse.ui.edit.cut",1389215059268
+org.zend.commandUsageMonitor,executed,org.eclipse.php.editor,,"org.eclipse.ui.edit.paste",1389215060470
+org.zend.commandUsageMonitor,executed,org.eclipse.php.editor,,"org.eclipse.ui.edit.paste",1389215061812
+org.zend.commandUsageMonitor,executed,org.eclipse.php.editor,,"org.eclipse.ui.edit.undo",1389215064942
+org.zend.commandUsageMonitor,executed,org.eclipse.php.editor,,"org.eclipse.ui.edit.undo",1389215066083
+org.zend.commandUsageMonitor,no handler,org.eclipse.php.editor,There is no handler to execute for command org.jkiss.dbeaver.core.resultset.row.edit.inline,"org.jkiss.dbeaver.core.resultset.row.edit.inline",1389215069985
+org.zend.commandUsageMonitor,no handler,org.eclipse.php.editor,There is no handler to execute for command org.jkiss.dbeaver.core.resultset.row.edit.inline,"org.jkiss.dbeaver.core.resultset.row.edit.inline",1389215069985
+org.zend.commandUsageMonitor,no handler,org.eclipse.php.editor,There is no handler to execute for command org.jkiss.dbeaver.core.resultset.toggleMode,"org.jkiss.dbeaver.core.resultset.toggleMode",1389215070902
+org.zend.commandUsageMonitor,no handler,org.eclipse.php.editor,There is no handler to execute for command org.jkiss.dbeaver.core.resultset.toggleMode,"org.jkiss.dbeaver.core.resultset.toggleMode",1389215070903
+org.zend.commandUsageMonitor,executed,org.eclipse.php.editor,,"org.eclipse.ui.edit.text.goto.wordNext",1389215076357
+org.zend.commandUsageMonitor,no handler,org.eclipse.php.editor,There is no handler to execute for command org.jkiss.dbeaver.core.resultset.row.edit.inline,"org.jkiss.dbeaver.core.resultset.row.edit.inline",1389215077694
+org.zend.commandUsageMonitor,no handler,org.eclipse.php.editor,There is no handler to execute for command org.jkiss.dbeaver.core.resultset.row.edit.inline,"org.jkiss.dbeaver.core.resultset.row.edit.inline",1389215077695
+org.zend.commandUsageMonitor,executed,org.eclipse.php.editor,,"org.eclipse.ui.edit.paste",1389215078074
+org.zend.commandUsageMonitor,no handler,org.eclipse.php.editor,There is no handler to execute for command org.jkiss.dbeaver.core.resultset.toggleMode,"org.jkiss.dbeaver.core.resultset.toggleMode",1389215079940
+org.zend.commandUsageMonitor,no handler,org.eclipse.php.editor,There is no handler to execute for command org.jkiss.dbeaver.core.resultset.toggleMode,"org.jkiss.dbeaver.core.resultset.toggleMode",1389215079941
+org.zend.commandUsageMonitor,executed,org.eclipse.php.editor,,"org.eclipse.ui.edit.text.goto.wordNext",1389215081493
+org.zend.commandUsageMonitor,executed,org.eclipse.php.editor,,"org.eclipse.ui.edit.text.goto.wordNext",1389215082144
+org.zend.commandUsageMonitor,executed,org.eclipse.php.editor,,"org.eclipse.ui.edit.text.goto.wordNext",1389215083506
+org.zend.commandUsageMonitor,no handler,org.eclipse.php.editor,There is no handler to execute for command org.jkiss.dbeaver.core.resultset.row.edit.inline,"org.jkiss.dbeaver.core.resultset.row.edit.inline",1389215085883
+org.zend.commandUsageMonitor,no handler,org.eclipse.php.editor,There is no handler to execute for command org.jkiss.dbeaver.core.resultset.row.edit.inline,"org.jkiss.dbeaver.core.resultset.row.edit.inline",1389215085883
+org.zend.commandUsageMonitor,executed,org.eclipse.php.editor,,"org.eclipse.ui.edit.paste",1389215086246
+org.zend.commandUsageMonitor,executed,org.eclipse.php.editor,,"org.eclipse.ui.file.save",1389215088102
+org.zend.commandUsageMonitor,no handler,org.eclipse.php.editor,There is no handler to execute for command org.jkiss.dbeaver.core.resultset.row.edit.inline,"org.jkiss.dbeaver.core.resultset.row.edit.inline",1389215113307
+org.zend.commandUsageMonitor,no handler,org.eclipse.php.editor,There is no handler to execute for command org.jkiss.dbeaver.core.resultset.row.edit.inline,"org.jkiss.dbeaver.core.resultset.row.edit.inline",1389215113308
+org.zend.commandUsageMonitor,no handler,org.eclipse.php.editor,There is no handler to execute for command org.jkiss.dbeaver.core.resultset.row.edit.inline,"org.jkiss.dbeaver.core.resultset.row.edit.inline",1389215116560
+org.zend.commandUsageMonitor,no handler,org.eclipse.php.editor,There is no handler to execute for command org.jkiss.dbeaver.core.resultset.row.edit.inline,"org.jkiss.dbeaver.core.resultset.row.edit.inline",1389215116560
+org.zend.commandUsageMonitor,no handler,org.eclipse.php.editor,There is no handler to execute for command org.jkiss.dbeaver.core.resultset.row.edit.inline,"org.jkiss.dbeaver.core.resultset.row.edit.inline",1389215121630
+org.zend.commandUsageMonitor,no handler,org.eclipse.php.editor,There is no handler to execute for command org.jkiss.dbeaver.core.resultset.row.edit.inline,"org.jkiss.dbeaver.core.resultset.row.edit.inline",1389215121630
+org.zend.commandUsageMonitor,executed,org.eclipse.php.editor,,"org.eclipse.ui.edit.copy",1389215129653
+org.zend.commandUsageMonitor,executed,org.eclipse.php.editor,,"org.eclipse.ui.edit.paste",1389215135652
+org.zend.commandUsageMonitor,executed,org.eclipse.php.editor,,"org.eclipse.ui.edit.copy",1389215141983
+org.zend.commandUsageMonitor,executed,org.eclipse.php.editor,,"org.eclipse.ui.edit.paste",1389215151173
+org.zend.commandUsageMonitor,executed,org.eclipse.php.editor,,"org.eclipse.ui.edit.undo",1389215152855
+org.zend.commandUsageMonitor,executed,org.eclipse.php.editor,,"org.eclipse.ui.edit.paste",1389215155904
+org.zend.commandUsageMonitor,executed,org.eclipse.php.editor,,"org.eclipse.ui.file.saveAll",1389215164943
+org.zend.commandUsageMonitor,executed,org.eclipse.php.editor,,"org.eclipse.ui.edit.copy",1389215178254
+org.zend.commandUsageMonitor,no handler,org.eclipse.php.editor,There is no handler to execute for command org.jkiss.dbeaver.core.resultset.row.edit.inline,"org.jkiss.dbeaver.core.resultset.row.edit.inline",1389215179406
+org.zend.commandUsageMonitor,no handler,org.eclipse.php.editor,There is no handler to execute for command org.jkiss.dbeaver.core.resultset.row.edit.inline,"org.jkiss.dbeaver.core.resultset.row.edit.inline",1389215179406
+org.zend.commandUsageMonitor,no handler,org.eclipse.php.editor,There is no handler to execute for command org.jkiss.dbeaver.core.resultset.row.edit.inline,"org.jkiss.dbeaver.core.resultset.row.edit.inline",1389215181390
+org.zend.commandUsageMonitor,no handler,org.eclipse.php.editor,There is no handler to execute for command org.jkiss.dbeaver.core.resultset.row.edit.inline,"org.jkiss.dbeaver.core.resultset.row.edit.inline",1389215181390
+org.zend.commandUsageMonitor,executed,org.eclipse.php.editor,,"org.eclipse.ui.edit.paste",1389215182302
+org.zend.commandUsageMonitor,executed,org.eclipse.php.editor,,"org.eclipse.ui.file.save",1389215186077
+org.zend.commandUsageMonitor,executed,org.eclipse.php.editor,,"org.eclipse.ui.file.save",1389215201234
+org.zend.commandUsageMonitor,executed,org.eclipse.php.editor,,"org.eclipse.ui.file.save",1389215277158
+org.zend.commandUsageMonitor,executed,org.eclipse.php.editor,,"org.eclipse.ui.edit.copy",1389222961493
+org.zend.commandUsageMonitor,executed,org.eclipse.php.editor,,"org.eclipse.ui.edit.copy",1389227243078
+org.zend.commandUsageMonitor,no handler,org.eclipse.php.editor,There is no handler to execute for command org.jkiss.dbeaver.core.resultset.row.edit.inline,"org.jkiss.dbeaver.core.resultset.row.edit.inline",1389227245573
+org.zend.commandUsageMonitor,no handler,org.eclipse.php.editor,There is no handler to execute for command org.jkiss.dbeaver.core.resultset.row.edit.inline,"org.jkiss.dbeaver.core.resultset.row.edit.inline",1389227245573
+org.zend.commandUsageMonitor,no handler,org.eclipse.php.editor,There is no handler to execute for command org.jkiss.dbeaver.core.resultset.row.edit.inline,"org.jkiss.dbeaver.core.resultset.row.edit.inline",1389227245749
+org.zend.commandUsageMonitor,no handler,org.eclipse.php.editor,There is no handler to execute for command org.jkiss.dbeaver.core.resultset.row.edit.inline,"org.jkiss.dbeaver.core.resultset.row.edit.inline",1389227245749
+org.zend.commandUsageMonitor,executed,org.eclipse.php.editor,,"org.eclipse.ui.edit.paste",1389227247452
+org.zend.commandUsageMonitor,executed,org.eclipse.php.editor,,"org.eclipse.ui.edit.cut",1389227254918
+org.zend.commandUsageMonitor,executed,org.eclipse.php.editor,,"org.eclipse.ui.edit.paste",1389227256838
+org.zend.commandUsageMonitor,no handler,org.eclipse.php.editor,There is no handler to execute for command org.jkiss.dbeaver.core.resultset.row.edit.inline,"org.jkiss.dbeaver.core.resultset.row.edit.inline",1389227307682
+org.zend.commandUsageMonitor,no handler,org.eclipse.php.editor,There is no handler to execute for command org.jkiss.dbeaver.core.resultset.row.edit.inline,"org.jkiss.dbeaver.core.resultset.row.edit.inline",1389227307682
+org.zend.commandUsageMonitor,executed,org.eclipse.php.editor,,"org.eclipse.ui.edit.copy",1389227312980
+org.zend.commandUsageMonitor,executed,org.eclipse.php.editor,,"org.eclipse.ui.edit.paste",1389227319468
+org.zend.commandUsageMonitor,no handler,org.eclipse.php.editor,There is no handler to execute for command org.jkiss.dbeaver.core.resultset.row.edit.inline,"org.jkiss.dbeaver.core.resultset.row.edit.inline",1389227320924
+org.zend.commandUsageMonitor,no handler,org.eclipse.php.editor,There is no handler to execute for command org.jkiss.dbeaver.core.resultset.row.edit.inline,"org.jkiss.dbeaver.core.resultset.row.edit.inline",1389227320924
+org.zend.commandUsageMonitor,executed,org.eclipse.php.editor,,"org.eclipse.ui.edit.copy",1389227344328
+org.zend.commandUsageMonitor,executed,org.eclipse.php.editor,,"org.eclipse.ui.edit.undo",1389227350618
+org.zend.commandUsageMonitor,executed,org.eclipse.php.editor,,"org.eclipse.ui.edit.undo",1389227350949
+org.zend.commandUsageMonitor,executed,org.eclipse.php.editor,,"org.eclipse.ui.edit.undo",1389227351154
+org.zend.commandUsageMonitor,executed,org.eclipse.php.editor,,"org.eclipse.ui.edit.undo",1389227351695
+org.zend.commandUsageMonitor,executed,org.eclipse.php.editor,,"org.eclipse.ui.edit.undo",1389227352165
+org.zend.commandUsageMonitor,executed,org.eclipse.php.editor,,"org.eclipse.ui.edit.undo",1389227352510
+org.zend.commandUsageMonitor,executed,org.eclipse.php.editor,,"org.eclipse.ui.edit.undo",1389227352835
+org.zend.commandUsageMonitor,executed,org.eclipse.php.editor,,"org.eclipse.ui.edit.undo",1389227353235
+org.zend.commandUsageMonitor,executed,org.eclipse.php.editor,,"org.eclipse.ui.edit.undo",1389227353535
+org.zend.commandUsageMonitor,executed,org.eclipse.php.editor,,"org.eclipse.ui.edit.undo",1389227353982
+org.zend.commandUsageMonitor,executed,org.eclipse.php.editor,,"org.eclipse.ui.edit.undo",1389227355538
+org.zend.commandUsageMonitor,executed,org.eclipse.php.editor,,"org.eclipse.ui.file.save",1389227545528
+org.zend.commandUsageMonitor,executed,org.eclipse.php.editor,,"org.eclipse.ui.edit.copy",1389227769932
+org.zend.commandUsageMonitor,executed,org.eclipse.php.editor,,"org.eclipse.ui.edit.paste",1389227772297
+org.zend.commandUsageMonitor,executed,org.eclipse.php.editor,,"org.eclipse.ui.file.save",1389227821231
+org.zend.commandUsageMonitor,executed,org.eclipse.php.editor,,"org.eclipse.ui.file.saveAll",1389227837092
+org.zend.commandUsageMonitor,executed,org.eclipse.php.editor,,"org.eclipse.ui.file.saveAll",1389227894605
+org.zend.commandUsageMonitor,executed,org.eclipse.php.editor,,"org.eclipse.ui.edit.copy",1389227992845

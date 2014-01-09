@@ -13,17 +13,10 @@
     //  erro - vermelho
     if ($error == -1)  echo "<div class=\"alert alert-danger\">".@$msg."</div>"; 
 ?>
-
-    <div class="page-header"><h1>Registro de novo usu&aacute;rio</h1></div>
+	<div class="col-md-6 column">
+    	<div class="page-header"><h1>Registro de novo usu&aacute;rio</h1></div>
             
-    <div class="row-fluid">
-        <div class="span12">
-            <div class="span6">
-                <div class="area"></div>
-            </div>
 
-            <div class="span6">
-                <div class="area">
                     <form name="cadastro" method="post" action="ctrl_cadastrar.php">
                         
                         <div class="control-group">
@@ -62,7 +55,6 @@
                             	<input class="form-control" name="usuario" type="text" id="usuario" value="<?php echo $_POST['usuario']; ?>" />
                             </div>
                         </div>
-
                         
                         <div class="control-group">
                             <div class="controls">
@@ -73,7 +65,7 @@
                                   bt_registrar.disabled = true;
                                 }
                                 ">
-                                Eu concordo com todos os <a href="doc_termos_uso.php">Termos de Servi&ccedil;os</a> e a <a href="doc_privacidade.php">Política de Privacidade</a>.</label> 
+                                Eu concordo com todos os <a href="doc_termos_uso.php">Termos de Servi&ccedil;os</a> e a <a href="doc_privacidade.php">Pol&iacute;tica de Privacidade</a>.</label> 
                                 <div class="form-actions">
                                 	<input type="hidden" name="Submit" value="Enviar" />
                                 	<button name="bt_registrar" class="btn btn-primary" type="submit" disabled>Registrar</button> 
@@ -81,12 +73,11 @@
                             </div>
                         </div>
                     
-
-						
-                        </form>
-                </div>
-            </div>
-        </div>
+                  </form>
+               
+    </div>
+    <div class="col-md-6 column">
+    	
     </div>
 </div>
 

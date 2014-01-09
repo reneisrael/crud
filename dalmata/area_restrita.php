@@ -24,7 +24,7 @@
 	if($_SESSION['nivel_usuario'] == 1){
 		echo "- <strong>PAINEL ADMIN</strong><br />Acesso total ao site e painel administrativo para gerenciar todos os usu&aacute;rios do site.<br /><br />";
 	}*/
-	echo "<a href=\"locais.php\">Empresas</a><br/>";
+	echo "<a href=\"locais.php\">Meus locais</a><br/>";
 	
 	echo "<a href=\"logout.php\">Sair</a>";
 ?>
