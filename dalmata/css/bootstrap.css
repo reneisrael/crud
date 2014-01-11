@@ -5729,6 +5729,18 @@ a.list-group-item.active:focus .list-group-item-text {
   border-bottom-left-radius: 3px;
 }
 
+.rodape {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  font-style: bold;
+  font-variant:small-caps;
+  color: #7a7c7d;
+  padding: 10px 15px;
+  background-color: #fcfcfc;
+  border-top: 1px solid #dddddd;
+  border-bottom-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
 .panel-group .panel {
   margin-bottom: 0;
   overflow: hidden;

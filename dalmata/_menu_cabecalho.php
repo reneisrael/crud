@@ -1,19 +1,21 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>100inc&ecirc;ndio - <?php print $cabecalho_title;?></title>
+  <?php include("/base.php");?>
+  <title> <?php print $nome_site.'. '.$cabecalho_title;?></title>
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="">
   <meta name="author" content="100incendio">
   <meta http-equiv='Content-Type' content='text/html; charset=utf-8'/>
 
-    <!--link rel="stylesheet/less" href="less/bootstrap.less" type="text/css" /-->
-	<!--link rel="stylesheet/less" href="less/responsive.less" type="text/css" /-->
-	<!--script src="js/less-1.3.3.min.js"></script-->
+    <!--link rel="stylesheet/less" href="<?php echo $base_url; ?>/less/bootstrap.less" type="text/css" /-->
+	<!--link rel="stylesheet/less" href="<?php echo $base_url; ?>/less/responsive.less" type="text/css" /-->
+	<!--script src="<?php echo $base_url; ?>/js/less-1.3.3.min.js"></script-->
 	<!--append ?#!watch? to the browser URL, then refresh the page. -->
 	
-	<link href="css/bootstrap.min.css" rel="stylesheet">
-	<link href="css/style.css" rel="stylesheet">
+	<link href="<?php echo $base_url; ?>/css/bootstrap.css" rel="stylesheet">
+	<link href="<?php echo $base_url; ?>/css/style.css" rel="stylesheet">
 
   <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
   <!--[if lt IE 9]>
@@ -21,15 +23,15 @@
   <![endif]-->
 
   <!-- Fav and touch icons -->
-  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="img/apple-touch-icon-144-precomposed.png">
-  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/apple-touch-icon-114-precomposed.png">
-  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/apple-touch-icon-72-precomposed.png">
-  <link rel="apple-touch-icon-precomposed" href="img/apple-touch-icon-57-precomposed.png">
-  <link rel="shortcut icon" href="img/favicon.png">
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="<?php echo $base_url; ?>/img/apple-touch-icon-144-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="<?php echo $base_url; ?>/img/apple-touch-icon-114-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="<?php echo $base_url; ?>/img/apple-touch-icon-72-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" href="<?php echo $base_url; ?>/img/apple-touch-icon-57-precomposed.png">
+  <link rel="shortcut icon" href="<?php echo $base_url; ?>/img/favicon.png">
   
-	<script type="text/javascript" src="js/jquery.min.js"></script>
-	<script type="text/javascript" src="js/bootstrap.min.js"></script>
-	<script type="text/javascript" src="js/scripts.js"></script>
+	<script type="text/javascript" src="<?php echo $base_url; ?>/js/jquery.min.js"></script>
+	<script type="text/javascript" src="<?php echo $base_url; ?>/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="<?php echo $base_url; ?>/js/scripts.js"></script>
 </head>
 
 <header class="container">
@@ -37,9 +39,9 @@
 <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
 	<div class="navbar-header"> 
 		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> 
-		<span class="sr-only">100inc&ecirc;ndio</span>
+		<span class="sr-only"><?php print $nome_site;?></span>
 		</button> 
-		<a class="navbar-brand">100inc&ecirc;ndio</a>
+		<a class="navbar-brand"><?php print $nome_site;?></a>
 	</div>
 				
 		<?php 
@@ -103,8 +105,7 @@
                     </li>
                 </ul>
 		<?php } ?>
-	</div>
-								
+	</div>		
 </nav>
 	<br/>
 	<br/>
