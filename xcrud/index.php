@@ -1,10 +1,11 @@
 <?php
+	$cabecalho_title = "100incêndio";
     include('menu_cabecalho.php');
     $xcrud->table('products');
     $xcrud2 = Xcrud::get_instance();
     $xcrud2->table('consultation');
     $xcrud3 = Xcrud::get_instance();
-    $xcrud3->table('base_fields');
+    $xcrud3->table('customers');
 ?>
 <body>
 <?php include('menu_lateral.php');?>
@@ -58,7 +59,15 @@
      
     
 				echo $xcrud2->render('create');
-				
+				 $xcrud3->change_type('photo', 'image', false, array(
+				'width' => 450,
+				'path' => '../uploads/gallery',
+				'thumbs' => array(array(
+						'height' => 55,
+						'width' => 120,
+						'crop' => true,
+						'marker' => '_th'))));
+						
 				echo $xcrud3->render();
             ?>
         </div>

@@ -1,7 +1,7 @@
 <?php
     include('xcrud/xcrud.php');
     $xcrud = Xcrud::get_instance();
-    $site_url = 'http://localhost:100/xteste';
+    $site_url = 'http://localhost:100/xcrud';
     $site_name = '100incêndio';
     $site_email = 'contato@100incendio.com.br';
 ?>
@@ -9,7 +9,7 @@
 <html>
 <head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <title>Some page title</title>
+    <title><?php echo $cabecalho_title; ?></title>
     <link href="<?php echo $site_url; ?>/xcrud/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
     <link href="<?php echo $site_url; ?>/xcrud/assets/style.css" rel="stylesheet" type="text/css" />
     <link href="<?php echo $site_url; ?>/xcrud/plugins/jquery-ui/jquery-ui.min.css" rel="stylesheet" type="text/css" />
@@ -64,7 +64,7 @@
 	</div>
 				
 		<?php 
-       		if(@$_SESSION['nivel_usuario'] == 0) { ?>
+       		if(@$_SESSION['nivel_usuario'] == "") { ?>
 			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 				<ul class="nav navbar-nav">
 					<li><a href="index.php"><span class="glyphicon glyphicon-home text-primary"></span> Home</a></li>
@@ -104,10 +104,10 @@
 				</ul>	
        <?php } ?>
 		
-	   <?php if(@$_SESSION['nivel_usuario'] == 1) { ?>
+	   <?php if(@$_SESSION['nivel_usuario'] == "user") { ?>
 	   			
 				<ul class="nav navbar-nav">
-					<li><a href="area_restrita.php"><span class="glyphicon glyphicon-home text-primary"></span> Painel Principal</a></li>
+					<li><a href="painel_principal.php"><span class="glyphicon glyphicon-home text-primary"></span> Painel Principal</a></li>
 				</ul>
 					
                 <ul class="nav navbar-nav navbar-right">
@@ -124,6 +124,27 @@
                     </li>
                 </ul>
 		<?php } ?>
+		
+	   <?php if(@$_SESSION['nivel_usuario'] == "admin") { ?>
+	   			
+				<ul class="nav navbar-nav">
+					<li><a href="painel_administrativo.php"><span class="glyphicon glyphicon-home text-primary"></span> Painel Administrativo</a></li>
+				</ul>
+					
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown"> 
+                    <span class="glyphicon glyphicon-user text-primary"> 
+                    	<?php print $_SESSION['nome'];?><strong class="caret"></strong>
+                    </span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="configuracoes.php"><span class="glyphicon glyphicon-cog text-primary"></span> Configurações</a></li>
+                            <li><a href="form_suporte.php"><span class="glyphicon glyphicon-envelope text-primary"></span> Suporte</a></li>
+                            <li class="divider"></li>
+                            <li><a href="logout.php"><span class="glyphicon glyphicon-off text-primary"></span> Sair</a></li>
+                        </ul>
+                    </li>
+                </ul>
+		<?php } ?>		
 	</div>		
 </nav>
 	<br/>
