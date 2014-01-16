@@ -5731,9 +5731,7 @@ a.list-group-item.active:focus .list-group-item-text {
 
 .rodape {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 12px;
-  font-style: bold;
-  font-variant:small-caps;
+  font-size: 10px;
   color: #7a7c7d;
   padding: 10px 15px;
   background-color: #fcfcfc;
