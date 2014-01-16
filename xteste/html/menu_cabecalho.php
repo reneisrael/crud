@@ -1,17 +1,30 @@
 <?php
 	include('http://localhost:100/xteste/site_config.php');
+<<<<<<< HEAD
 ?>
 <!DOCTYPE HTML>
 <html>
 <head>
+=======
+?>
+<!DOCTYPE HTML>
+<html>
+<head>
+>>>>>>> 5caa52047a26555b6f56377f2cfd640af1be1198
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="">
 	<meta name="author" content="100incendio">    
     
+<<<<<<< HEAD
     <title> <?php print $site_name.'. '.$cabecalho_title;?></title>
     
     <!-- Bootstrap for xcrud -->
+=======
+    <title> <?php print $site_name.'. '.$cabecalho_title;?></title>
+    
+    <!-- Bootstrap for xcrud -->
+>>>>>>> 5caa52047a26555b6f56377f2cfd640af1be1198
     <link href="<?php echo $site_url; ?>/xcrud/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
     <link href="<?php echo $site_url; ?>/xcrud/assets/style.css" rel="stylesheet" type="text/css" />
     <link href="<?php echo $site_url; ?>/xcrud/plugins/jquery-ui/jquery-ui.min.css" rel="stylesheet" type="text/css" />
@@ -44,9 +57,15 @@
 	<script type="text/javascript" src="<?php echo $site_url; ?>/js/jquery.min.js"></script>
 	<script type="text/javascript" src="<?php echo $site_url; ?>/js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="<?php echo $site_url; ?>/js/scripts.js"></script>
+<<<<<<< HEAD
 	
 </head>
  
+=======
+	
+</head>
+ 
+>>>>>>> 5caa52047a26555b6f56377f2cfd640af1be1198
 <header class="container">
 
 <nav class="navbar navbar-default navbar-fixed-top" role="navigation">

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?php
 	$xcrud = Xcrud::get_instance();
     $xcrud->table('orderdetails');
@@ -7,4 +8,15 @@
     $xcrud->highlight_row('quantityOrdered', '>=', 50, '#8DED79');
     $xcrud->highlight('priceEach', '>', 100, '#9ADAFF');
     echo $xcrud->render();
+=======
+<?php
+	$xcrud = Xcrud::get_instance();
+    $xcrud->table('orderdetails');
+    $xcrud->highlight('quantityOrdered', '<', 25, 'red');
+    $xcrud->highlight('quantityOrdered', '>=', 25, 'yellow');
+    $xcrud->highlight('quantityOrdered', '>', 40, '#8DED79');
+    $xcrud->highlight_row('quantityOrdered', '>=', 50, '#8DED79');
+    $xcrud->highlight('priceEach', '>', 100, '#9ADAFF');
+    echo $xcrud->render();
+>>>>>>> 5caa52047a26555b6f56377f2cfd640af1be1198
 ?>

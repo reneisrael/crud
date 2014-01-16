@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?php
 function publish_action($xcrud)
 {
@@ -17,3 +18,24 @@ function unpublish_action($xcrud)
         $db->query($query);
     }
 }
+=======
+<?php
+function publish_action($xcrud)
+{
+    if ($xcrud->get('primary'))
+    {
+        $db = Xcrud_db::get_instance();
+        $query = 'UPDATE base_fields SET `bool` = b\'1\' WHERE id = ' . (int)$xcrud->get('primary');
+        $db->query($query);
+    }
+}
+function unpublish_action($xcrud)
+{
+    if ($xcrud->get('primary'))
+    {
+        $db = Xcrud_db::get_instance();
+        $query = 'UPDATE base_fields SET `bool` = b\'0\' WHERE id = ' . (int)$xcrud->get('primary');
+        $db->query($query);
+    }
+}
+>>>>>>> 5caa52047a26555b6f56377f2cfd640af1be1198
