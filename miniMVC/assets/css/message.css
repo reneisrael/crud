@@ -1,0 +1,42 @@
+.message{
+	position:relative;
+	margin:0.5em auto;
+	padding:0.5em;
+	width:95%;
+}
+
+.message .close{
+	width:1em;
+	height:1em;
+	position:absolute;
+	right:0.5em;
+	top:0.5em;
+	text-align:center;
+	vertical-align:middle;
+	line-height:1em;
+}
+
+.message .close:hover {
+	cursor:pointer;
+}
+
+.message .icon{
+	left:0.5em;
+	top:0.5em;
+	margin-right:1em;
+}
+
+.error{
+	border:1px solid #924949;
+	background: #f3e6e6;
+}
+
+.success{
+	border:1px solid #1f8454;
+	background: #70dda9;
+}
+
+.info{
+	border:1px solid #bfbe3a;
+	background: #FFFFCC;
+}

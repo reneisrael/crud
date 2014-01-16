@@ -1,0 +1,29 @@
+v1.6.5 - Default_tab() method and $default_tab option added.
+	Nested table will be displayed in tab if you use tabs.
+	Some fixes in result html.
+	Added prefix support for table names.
+	"Unique checking" bug fixed.
+	Joomla 3.2 integration plugin.
+
+v.1.6.4 - Automatic url detection fixed.
+	Map fixed.
+	Minor changes in js events.
+	New method set_exception() is available in callback functions.
+	Validation now is check data on server side too.
+	$postdata variable is object now in callbacks. Check your custom functions.
+	JS alerts replaced with message bars.
+
+v.1.6.3 - Unset_edit() condition fixed.
+	Links_label() fixed.
+	Changes in upload sheme.
+	Classname parameter in sum() method fixed.
+	Added codegniter integration examples.
+
+v.1.6.2 - Urgent bugfix: image uploads.
+	Printout return fixed.
+	Some improvement of compatibility with frameworks.
+
+v.1.6.1 - Nested table CKEditor bug fixed
+	Column callback csv fixed
+
+v.1.6.0 - First release. From this moment v1.5 is deprecated.

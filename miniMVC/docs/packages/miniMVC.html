@@ -1,0 +1,413 @@
+<!DOCTYPE html><html xmlns:date="http://exslt.org/dates-and-times" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+<meta charset="utf-8">
+<title>miniMVC » miniMVC</title>
+<meta name="author" content="Mike van Riel">
+<meta name="description" content="">
+<link href="../css/template.css" rel="stylesheet" media="all">
+<script src="../js/jquery-1.7.1.min.js" type="text/javascript"></script><script src="../js/jquery-ui-1.8.2.custom.min.js" type="text/javascript"></script><script src="../js/jquery.mousewheel.min.js" type="text/javascript"></script><script src="../js/bootstrap.js" type="text/javascript"></script><script src="../js/template.js" type="text/javascript"></script><script src="../js/prettify/prettify.min.js" type="text/javascript"></script><link rel="shortcut icon" href="../img/favicon.ico">
+<link rel="apple-touch-icon" href="../img/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="../img/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="../img/apple-touch-icon-114x114.png">
+</head>
+<body>
+<div class="navbar navbar-fixed-top">
+<div class="navbar-inner"><div class="container">
+<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a><a class="brand" href="../index.html">miniMVC</a><div class="nav-collapse"><ul class="nav">
+<li class="dropdown">
+<a href="#api" class="dropdown-toggle" data-toggle="dropdown">
+                                    API Documentation <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a>Packages</a></li>
+<li><a href="../packages/Default.html"><i class="icon-folder-open"></i> Default</a></li>
+<li><a href="../packages/Query.html"><i class="icon-folder-open"></i> Query</a></li>
+<li><a href="../packages/miniMVC.html"><i class="icon-folder-open"></i> miniMVC</a></li>
+</ul>
+</li>
+<li class="dropdown" id="charts-menu">
+<a href="#charts" class="dropdown-toggle" data-toggle="dropdown">
+                                    Charts <b class="caret"></b></a><ul class="dropdown-menu"><li><a href="../graph_class.html"><i class="icon-list-alt"></i> Class hierarchy diagram</a></li></ul>
+</li>
+<li class="dropdown" id="reports-menu">
+<a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
+                                    Reports <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
+                <span class="label label-info">0</span></a></li>
+<li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
+                <ul><li>todo 
+                <span class="label label-info">5</span>
+</li></ul></a></li>
+<li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
+                <span class="label label-info">0</span></a></li>
+</ul>
+</li>
+</ul></div>
+</div></div>
+<div class="go_to_top"><a href="#___" style="color: inherit">Back to top  <i class="icon-upload icon-white"></i></a></div>
+</div>
+<div id="___" class="container">
+<noscript><div class="alert alert-warning">
+                            Javascript is disabled; several features are only available
+                            if Javascript is enabled.
+                        </div></noscript>
+<div class="row">
+<div class="span4">
+<div class="btn-group view pull-right" data-toggle="buttons-radio">
+<button class="btn details" title="Show descriptions and method names"><i class="icon-list"></i></button><button class="btn simple" title="Show only method names"><i class="icon-align-justify"></i></button>
+</div>
+<ul class="side-nav nav nav-list">
+<li class="nav-header">
+<i class="icon-map-marker"></i> Packages</li>
+<li>
+<a href="../packages/miniMVC.html" title="miniMVC"><i class="icon-folder-open"></i>miniMVC</a><ul class="nav nav-list nav-packages">
+<li>
+<a href="../packages/miniMVC.Libraries.html" title="Libraries"><i class="icon-folder-open"></i>Libraries</a><ul class="nav nav-list nav-packages"></ul>
+</li>
+<li>
+<a href="../packages/miniMVC.System.html" title="System"><i class="icon-folder-open"></i>System</a><ul class="nav nav-list nav-packages"></ul>
+</li>
+<li>
+<a href="../packages/miniMVC.libraries.html" title="libraries"><i class="icon-folder-open"></i>libraries</a><ul class="nav nav-list nav-packages"></ul>
+</li>
+</ul>
+</li>
+<li class="nav-header">
+<i class="icon-custom icon-function"></i> Functions</li>
+<li class="function  "><a href="#_autoload" title="_autoload :: Function to autoload system libraries"><span class="description">Function to autoload system libraries</span><pre>_autoload</pre></a></li>
+<li class="function  "><a href="#controller_methods" title="controller_methods :: Returns routable methods for the specified controller class"><span class="description">Returns routable methods for the specified controller class</span><pre>controller_methods</pre></a></li>
+<li class="function  "><a href="#do_include" title="do_include :: Array_map callback to load a folder of classes at once"><span class="description">Array_map callback to load a folder of classes at once</span><pre>do_include</pre></a></li>
+<li class="function  "><a href="#get_last_segment" title="get_last_segment :: Returns the last segment of the current url"><span class="description">Returns the last segment of the current url</span><pre>get_last_segment</pre></a></li>
+<li class="function  "><a href="#get_segments" title="get_segments :: Gets an array of the segments of the current url"><span class="description">Gets an array of the segments of the current url</span><pre>get_segments</pre></a></li>
+<li class="function  "><a href="#init" title="init :: Load required classes for bootstraping"><span class="description">Load required classes for bootstraping</span><pre>init</pre></a></li>
+<li class="function  "><a href="#is_like_array" title="is_like_array :: Utility function to check if a variable is set, and is an array or object"><span class="description">Utility function to check if a variable is set, and is an array or object</span><pre>is_like_array</pre></a></li>
+<li class="function  "><a href="#on_error" title="on_error :: Custom error handler"><span class="description">Custom error handler</span><pre>on_error</pre></a></li>
+<li class="function  "><a href="#on_exception" title="on_exception :: Custom exception handlererror_get_last"><span class="description">Custom exception handlererror_get_last</span><pre>on_exception</pre></a></li>
+<li class="function  "><a href="#route" title="route :: Calls the appropriate module/controller/function based on the url"><span class="description">Calls the appropriate module/controller/function based on the url</span><pre>route</pre></a></li>
+<li class="function  "><a href="#run" title="run :: Instantiate the appropriate controller"><span class="description">Instantiate the appropriate controller</span><pre>run</pre></a></li>
+<li class="function  "><a href="#show_404" title="show_404 :: General 404 function"><span class="description">General 404 function</span><pre>show_404</pre></a></li>
+<li class="function  "><a href="#show_error" title="show_error :: Fatal Error page function"><span class="description">Fatal Error page function</span><pre>show_error</pre></a></li>
+<li class="function  "><a href="#shutdown" title="shutdown :: Function to run on script shutdown
+-used to catch most fatal errors, and
+display them cleanly"><span class="description">Function to run on script shutdown
+-used to catch most fatal errors, and
+display them cleanly</span><pre>shutdown</pre></a></li>
+<li class="function  "><a href="#site_url" title="site_url :: Returns a full url from a url segment"><span class="description">Returns a full url from a url segment</span><pre>site_url</pre></a></li>
+<li class="function  "><a href="#to_string" title="to_string :: Prints out the contents of the object"><span class="description">Prints out the contents of the object</span><pre>to_string</pre></a></li>
+</ul>
+</div>
+<div class="span8 package-contents">
+<ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-folder-open"></i></a><span class="divider">\</span>
+</li>
+<li class="active"><a href="../packages/miniMVC.html">miniMVC</a></li>
+</ul>
+<div class="package-indent">
+<h3>
+<i class="icon-custom icon-function"></i> Functions</h3>
+<a name="_autoload" id="_autoload"></a><div class="element clickable function  _autoload" data-toggle="collapse" data-target="._autoload .collapse">
+<h2>Function to autoload system libraries</h2>
+<pre>_autoload($name) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$name</h4>
+<code></code><p>string</p></div>
+</div></div>
+</div>
+<a name="controller_methods" id="controller_methods"></a><div class="element clickable function  controller_methods" data-toggle="collapse" data-target=".controller_methods .collapse">
+<h2>Returns routable methods for the specified controller class</h2>
+<pre>controller_methods(string $controller) : array</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$controller</h4>
+<code>string</code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code>array</code></div>
+</div></div>
+</div>
+<a name="do_include" id="do_include"></a><div class="element clickable function  do_include" data-toggle="collapse" data-target=".do_include .collapse">
+<h2>Array_map callback to load a folder of classes at once</h2>
+<pre>do_include(string $path) : void</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$path</h4>
+<code>string</code>
+</div>
+</div></div>
+</div>
+<a name="get_last_segment" id="get_last_segment"></a><div class="element clickable function  get_last_segment" data-toggle="collapse" data-target=".get_last_segment .collapse">
+<h2>Returns the last segment of the current url</h2>
+<pre>get_last_segment() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a name="get_segments" id="get_segments"></a><div class="element clickable function  get_segments" data-toggle="collapse" data-target=".get_segments .collapse">
+<h2>Gets an array of the segments of the current url</h2>
+<pre>get_segments() : array</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<h3>Returns</h3>
+<div class="subelement response"><code>array</code></div>
+</div></div>
+</div>
+<a name="init" id="init"></a><div class="element clickable function  init" data-toggle="collapse" data-target=".init .collapse">
+<h2>Load required classes for bootstraping</h2>
+<pre>init() : void</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8"><p class="long_description"></p></div></div>
+</div>
+<a name="is_like_array" id="is_like_array"></a><div class="element clickable function  is_like_array" data-toggle="collapse" data-target=".is_like_array .collapse">
+<h2>Utility function to check if a variable is set, and is an array or object</h2>
+<pre>is_like_array(mixed $var) : bool</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$var</h4>
+<code>mixed</code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code>bool</code></div>
+</div></div>
+</div>
+<a name="on_error" id="on_error"></a><div class="element clickable function  on_error" data-toggle="collapse" data-target=".on_error .collapse">
+<h2>Custom error handler</h2>
+<pre>on_error(int $severity, string $message, string $filepath, int $line) : \miniMVC\ErrorException</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$severity</h4>
+<code>int</code>
+</div>
+<div class="subelement argument">
+<h4>$message</h4>
+<code>string</code>
+</div>
+<div class="subelement argument">
+<h4>$filepath</h4>
+<code>string</code>
+</div>
+<div class="subelement argument">
+<h4>$line</h4>
+<code>int</code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code>\miniMVC\ErrorException</code></div>
+</div></div>
+</div>
+<a name="on_exception" id="on_exception"></a><div class="element clickable function  on_exception" data-toggle="collapse" data-target=".on_exception .collapse">
+<h2>Custom exception handlererror_get_last</h2>
+<pre>on_exception(\miniMVC\Exception $exception) : void</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$exception</h4>
+<code>\miniMVC\Exception</code>
+</div>
+</div></div>
+</div>
+<a name="route" id="route"></a><div class="element clickable function  route" data-toggle="collapse" data-target=".route .collapse">
+<h2>Calls the appropriate module/controller/function based on the url</h2>
+<pre>route() : void</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8"><p class="long_description"></p></div></div>
+</div>
+<a name="run" id="run"></a><div class="element clickable function  run" data-toggle="collapse" data-target=".run .collapse">
+<h2>Instantiate the appropriate controller</h2>
+<pre>run($module, $controller, $func, $args) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$module</h4>
+<code></code><p>string</p></div>
+<div class="subelement argument">
+<h4>$controller</h4>
+<code></code><p>string</p></div>
+<div class="subelement argument">
+<h4>$func</h4>
+<code></code><p>string</p></div>
+<div class="subelement argument">
+<h4>$args</h4>
+<code></code><p>array</p></div>
+</div></div>
+</div>
+<a name="show_404" id="show_404"></a><div class="element clickable function  show_404" data-toggle="collapse" data-target=".show_404 .collapse">
+<h2>General 404 function</h2>
+<pre>show_404() : void</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8"><p class="long_description"></p></div></div>
+</div>
+<a name="show_error" id="show_error"></a><div class="element clickable function  show_error" data-toggle="collapse" data-target=".show_error .collapse">
+<h2>Fatal Error page function</h2>
+<pre>show_error(string $message, int $status_code) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$message</h4>
+<code>string</code>
+</div>
+<div class="subelement argument">
+<h4>$status_code</h4>
+<code>int</code>
+</div>
+</div></div>
+</div>
+<a name="shutdown" id="shutdown"></a><div class="element clickable function  shutdown" data-toggle="collapse" data-target=".shutdown .collapse">
+<h2>Function to run on script shutdown
+-used to catch most fatal errors, and
+display them cleanly</h2>
+<pre>shutdown() : void</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8"><p class="long_description"></p></div></div>
+</div>
+<a name="site_url" id="site_url"></a><div class="element clickable function  site_url" data-toggle="collapse" data-target=".site_url .collapse">
+<h2>Returns a full url from a url segment</h2>
+<pre>site_url(string $segment) : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$segment</h4>
+<code>string</code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a name="to_string" id="to_string"></a><div class="element clickable function  to_string" data-toggle="collapse" data-target=".to_string .collapse">
+<h2>Prints out the contents of the object</h2>
+<pre>to_string(\miniMVC\object/array $data, string $method) : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$data</h4>
+<code>\miniMVC\object/array</code>
+</div>
+<div class="subelement argument">
+<h4>$method</h4>
+<code>string</code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-folder-open"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../packages/miniMVC.html">miniMVC</a></li>
+<span class="divider">\</span><li class="active"><a href="../packages/miniMVC.Libraries.html">Libraries</a></li>
+</ul>
+<div class="package-indent">
+<h3>
+<i class="icon-custom icon-class"></i> Classes and interfaces</h3>
+<a name="Data_Store" id="Data_Store"></a><div class="element ajax clickable class" href="../classes/miniMVC.Data_Store.html">
+<h1>Data_Store<a href="../classes/miniMVC.Data_Store.html">¶</a>
+</h1>
+<p class="short_description">Class for using JSON as a key->value data store</p>
+<div class="details collapse"></div>
+<a href="../classes/miniMVC.Data_Store.html" class="more">« More »</a>
+</div>
+<a name="Session" id="Session"></a><div class="element ajax clickable class" href="../classes/miniMVC.Session.html">
+<h1>Session<a href="../classes/miniMVC.Session.html">¶</a>
+</h1>
+<p class="short_description">Class to improve handling of PHP sessions</p>
+<div class="details collapse"></div>
+<a href="../classes/miniMVC.Session.html" class="more">« More »</a>
+</div>
+</div>
+<ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-folder-open"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../packages/miniMVC.html">miniMVC</a></li>
+<span class="divider">\</span><li class="active"><a href="../packages/miniMVC.System.html">System</a></li>
+</ul>
+<div class="package-indent">
+<h3>
+<i class="icon-custom icon-class"></i> Classes and interfaces</h3>
+<a name="Controller" id="Controller"></a><div class="element ajax clickable class" href="../classes/miniMVC.Controller.html">
+<h1>Controller<a href="../classes/miniMVC.Controller.html">¶</a>
+</h1>
+<p class="short_description">Base Controller Class</p>
+<div class="details collapse"></div>
+<a href="../classes/miniMVC.Controller.html" class="more">« More »</a>
+</div>
+<a name="DB" id="DB"></a><div class="element ajax clickable class" href="../classes/miniMVC.DB.html">
+<h1>DB<a href="../classes/miniMVC.DB.html">¶</a>
+</h1>
+<p class="short_description">Extend PHP's PDO class to add some more functionality</p>
+<div class="details collapse"></div>
+<a href="../classes/miniMVC.DB.html" class="more">« More »</a>
+</div>
+<a name="Model" id="Model"></a><div class="element ajax clickable class" href="../classes/miniMVC.Model.html">
+<h1>Model<a href="../classes/miniMVC.Model.html">¶</a>
+</h1>
+<p class="short_description">Base Model Class</p>
+<div class="details collapse"></div>
+<a href="../classes/miniMVC.Model.html" class="more">« More »</a>
+</div>
+<a name="Page" id="Page"></a><div class="element ajax clickable class" href="../classes/miniMVC.Page.html">
+<h1>Page<a href="../classes/miniMVC.Page.html">¶</a>
+</h1>
+<p class="short_description">Class for building pages</p>
+<div class="details collapse"></div>
+<a href="../classes/miniMVC.Page.html" class="more">« More »</a>
+</div>
+</div>
+<ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-folder-open"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../packages/miniMVC.html">miniMVC</a></li>
+<span class="divider">\</span><li class="active"><a href="../packages/miniMVC.libraries.html">libraries</a></li>
+</ul>
+<div class="package-indent">
+<h3>
+<i class="icon-custom icon-class"></i> Classes and interfaces</h3>
+<a name="Bcrypt" id="Bcrypt"></a><div class="element ajax clickable class" href="../classes/Bcrypt.html">
+<h1>Bcrypt<a href="../classes/Bcrypt.html">¶</a>
+</h1>
+<p class="short_description">Class to simplify dealing with bcrypt for password handling</p>
+<div class="details collapse"></div>
+<a href="../classes/Bcrypt.html" class="more">« More »</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><footer class="span12">
+            Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
+            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.0.0a2</a> and<br>
+            generated on 2012-07-03T13:29:41-04:00.<br></footer></div>
+</div>
+</body>
+</html>

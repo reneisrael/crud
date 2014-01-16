@@ -1,0 +1,616 @@
+<!DOCTYPE html><html xmlns:date="http://exslt.org/dates-and-times" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+<meta charset="utf-8">
+<title>miniMVC » \miniMVC\Page</title>
+<meta name="author" content="Mike van Riel">
+<meta name="description" content="">
+<link href="../css/template.css" rel="stylesheet" media="all">
+<script src="../js/jquery-1.7.1.min.js" type="text/javascript"></script><script src="../js/jquery-ui-1.8.2.custom.min.js" type="text/javascript"></script><script src="../js/jquery.mousewheel.min.js" type="text/javascript"></script><script src="../js/bootstrap.js" type="text/javascript"></script><script src="../js/template.js" type="text/javascript"></script><script src="../js/prettify/prettify.min.js" type="text/javascript"></script><link rel="shortcut icon" href="../img/favicon.ico">
+<link rel="apple-touch-icon" href="../img/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="../img/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="../img/apple-touch-icon-114x114.png">
+</head>
+<body>
+<div class="navbar navbar-fixed-top">
+<div class="navbar-inner"><div class="container">
+<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a><a class="brand" href="../index.html">miniMVC</a><div class="nav-collapse"><ul class="nav">
+<li class="dropdown">
+<a href="#api" class="dropdown-toggle" data-toggle="dropdown">
+                                    API Documentation <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a>Packages</a></li>
+<li><a href="../packages/Default.html"><i class="icon-folder-open"></i> Default</a></li>
+<li><a href="../packages/Query.html"><i class="icon-folder-open"></i> Query</a></li>
+<li><a href="../packages/miniMVC.html"><i class="icon-folder-open"></i> miniMVC</a></li>
+</ul>
+</li>
+<li class="dropdown" id="charts-menu">
+<a href="#charts" class="dropdown-toggle" data-toggle="dropdown">
+                                    Charts <b class="caret"></b></a><ul class="dropdown-menu"><li><a href="../graph_class.html"><i class="icon-list-alt"></i> Class hierarchy diagram</a></li></ul>
+</li>
+<li class="dropdown" id="reports-menu">
+<a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
+                                    Reports <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
+                <span class="label label-info">0</span></a></li>
+<li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
+                <ul><li>todo 
+                <span class="label label-info">5</span>
+</li></ul></a></li>
+<li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
+                <span class="label label-info">0</span></a></li>
+</ul>
+</li>
+</ul></div>
+</div></div>
+<div class="go_to_top"><a href="#___" style="color: inherit">Back to top  <i class="icon-upload icon-white"></i></a></div>
+</div>
+<div id="___" class="container">
+<noscript><div class="alert alert-warning">
+                            Javascript is disabled; several features are only available
+                            if Javascript is enabled.
+                        </div></noscript>
+<div class="row">
+<div class="span4">
+<span class="btn-group visibility" data-toggle="buttons-checkbox"><button class="btn public active" title="Show public elements">Public</button><button class="btn protected" title="Show protected elements">Protected</button><button class="btn private" title="Show private elements">Private</button><button class="btn inherited active" title="Show inherited elements">Inherited</button></span><div class="btn-group view pull-right" data-toggle="buttons-radio">
+<button class="btn details" title="Show descriptions and method names"><i class="icon-list"></i></button><button class="btn simple" title="Show only method names"><i class="icon-align-justify"></i></button>
+</div>
+<ul class="side-nav nav nav-list">
+<li class="nav-header">
+<i class="icon-custom icon-method"></i> Methods</li>
+<li class="method public "><a href="#__construct" title="__construct :: Set up the page class"><span class="description">Set up the page class</span><pre>__construct()</pre></a></li>
+<li class="method public "><a href="#__destruct" title="__destruct :: PHP magic method called when ending the script
+Used for outputing HTML"><span class="description">PHP magic method called when ending the script
+Used for outputing HTML</span><pre>__destruct()</pre></a></li>
+<li class="method public "><a href="#append_output" title="append_output :: Adds text to the output buffer"><span class="description">Adds text to the output buffer</span><pre>append_output()</pre></a></li>
+<li class="method public "><a href="#build_footer" title="build_footer :: Builds common footer with any additional js"><span class="description">Builds common footer with any additional js</span><pre>build_footer()</pre></a></li>
+<li class="method public "><a href="#build_header" title="build_header :: Sets custom page header"><span class="description">Sets custom page header</span><pre>build_header()</pre></a></li>
+<li class="method public "><a href="#flush_headers" title="flush_headers :: Sends headers and then removes them"><span class="description">Sends headers and then removes them</span><pre>flush_headers()</pre></a></li>
+<li class="method public "><a href="#load_view" title="load_view :: Function for loading a view"><span class="description">Function for loading a view</span><pre>load_view()</pre></a></li>
+<li class="method public "><a href="#output_string" title="output_string :: Output String"><span class="description">Output String</span><pre>output_string()</pre></a></li>
+<li class="method public "><a href="#redirect_303" title="redirect_303 :: Redirect 303"><span class="description">Redirect 303</span><pre>redirect_303()</pre></a></li>
+<li class="method public "><a href="#render" title="render :: Render"><span class="description">Render</span><pre>render()</pre></a></li>
+<li class="method public "><a href="#set_base" title="set_base :: Sets custom base href"><span class="description">Sets custom base href</span><pre>set_base()</pre></a></li>
+<li class="method public "><a href="#set_body_class" title="set_body_class :: Sets custom body class"><span class="description">Sets custom body class</span><pre>set_body_class()</pre></a></li>
+<li class="method public "><a href="#set_body_id" title="set_body_id :: Sets custom body id"><span class="description">Sets custom body id</span><pre>set_body_id()</pre></a></li>
+<li class="method public "><a href="#set_css_group" title="set_css_group :: Sets a minified css group"><span class="description">Sets a minified css group</span><pre>set_css_group()</pre></a></li>
+<li class="method public "><a href="#set_css_tag" title="set_css_tag :: Sets custom css tags"><span class="description">Sets custom css tags</span><pre>set_css_tag()</pre></a></li>
+<li class="method public "><a href="#set_foot_js_group" title="set_foot_js_group :: Sets a minified javascript group for the page footer"><span class="description">Sets a minified javascript group for the page footer</span><pre>set_foot_js_group()</pre></a></li>
+<li class="method public "><a href="#set_head_js_group" title="set_head_js_group :: Sets minified javascript group in header"><span class="description">Sets minified javascript group in header</span><pre>set_head_js_group()</pre></a></li>
+<li class="method public "><a href="#set_head_tag" title="set_head_tag :: Sets a custom tag in the header"><span class="description">Sets a custom tag in the header</span><pre>set_head_tag()</pre></a></li>
+<li class="method public "><a href="#set_header" title="set_header :: Sets a header for later output"><span class="description">Sets a header for later output</span><pre>set_header()</pre></a></li>
+<li class="method public "><a href="#set_message" title="set_message :: Set Message"><span class="description">Set Message</span><pre>set_message()</pre></a></li>
+<li class="method public "><a href="#set_meta" title="set_meta :: Set Meta"><span class="description">Set Meta</span><pre>set_meta()</pre></a></li>
+<li class="method public "><a href="#set_output" title="set_output :: Sets the output buffer"><span class="description">Sets the output buffer</span><pre>set_output()</pre></a></li>
+<li class="method public "><a href="#set_title" title="set_title :: Sets html title string"><span class="description">Sets html title string</span><pre>set_title()</pre></a></li>
+<li class="nav-header private">» Private</li>
+<li class="method private "><a href="#_headers" title="_headers :: Sets server headers and doctype"><span class="description">Sets server headers and doctype</span><pre>_headers()</pre></a></li>
+<li class="method private "><a href="#_link_tag" title="_link_tag :: Private helper function to generate link tags"><span class="description">Private helper function to generate link tags</span><pre>_link_tag()</pre></a></li>
+<li class="method private "><a href="#_meta" title="_meta :: Private helper function to generate meta tags"><span class="description">Private helper function to generate meta tags</span><pre>_meta()</pre></a></li>
+<li class="method private "><a href="#script_tag" title="script_tag :: Script Tag"><span class="description">Script Tag</span><pre>script_tag()</pre></a></li>
+<li class="nav-header">
+<i class="icon-custom icon-property"></i> Properties</li>
+<li class="nav-header private">» Private</li>
+<li class="property private "><a href="#%24base" title="$base :: Base tag"><span class="description">Base tag</span><pre>$base</pre></a></li>
+<li class="property private "><a href="#%24body_class" title="$body_class :: Class(es) to apply to the main body tag"><span class="description">Class(es) to apply to the main body tag</span><pre>$body_class</pre></a></li>
+<li class="property private "><a href="#%24body_id" title="$body_id :: Id to apply to the body tag"><span class="description">Id to apply to the body tag</span><pre>$body_id</pre></a></li>
+<li class="property private "><a href="#%24buffer" title="$buffer :: Content for outputting"><span class="description">Content for outputting</span><pre>$buffer</pre></a></li>
+<li class="property private "><a href="#%24css" title="$css :: CSS tags for the page"><span class="description">CSS tags for the page</span><pre>$css</pre></a></li>
+<li class="property private "><a href="#%24foot_js" title="$foot_js :: JS tags for the footer"><span class="description">JS tags for the footer</span><pre>$foot_js</pre></a></li>
+<li class="property private "><a href="#%24head_js" title="$head_js :: JS tags for the header"><span class="description">JS tags for the header</span><pre>$head_js</pre></a></li>
+<li class="property private "><a href="#%24head_tags" title="$head_tags :: Additional header tags"><span class="description">Additional header tags</span><pre>$head_tags</pre></a></li>
+<li class="property private "><a href="#%24headers" title="$headers :: HTTP headers to send"><span class="description">HTTP headers to send</span><pre>$headers</pre></a></li>
+<li class="property private "><a href="#%24meta" title="$meta :: Meta tags"><span class="description">Meta tags</span><pre>$meta</pre></a></li>
+<li class="property private "><a href="#%24title" title="$title :: Page title"><span class="description">Page title</span><pre>$title</pre></a></li>
+</ul>
+</div>
+<div class="span8">
+<a name="%5CminiMVC%5CPage" id="\miniMVC\Page"></a><ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-custom icon-class"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/miniMVC.html">miniMVC</a></li>
+<li class="active">
+<span class="divider">\</span><a href="../classes/miniMVC.Page.html">Page</a>
+</li>
+</ul>
+<div href="../classes/miniMVC.Page.html" class="element class">
+<p class="short_description">Class for building pages</p>
+<div class="details">
+<p class="long_description"><p>All methods are chainable, with the exception of the constructor,
+build_header(), build_footer(), and _headers() methods.</p></p>
+<table class="table table-bordered">
+<tr>
+<th>package</th>
+<td><a href="..//packages/miniMVC.System.html">miniMVC</a></td>
+</tr>
+<tr>
+<th>subpackage</th>
+<td>System</td>
+</tr>
+</table>
+<h3>
+<i class="icon-custom icon-method"></i> Methods</h3>
+<a name="__construct" id="__construct"></a><div class="element clickable method public __construct" data-toggle="collapse" data-target=".__construct .collapse">
+<h2>Set up the page class</h2>
+<pre>__construct() : void</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8"><p class="long_description"></p></div></div>
+</div>
+<a name="__destruct" id="__destruct"></a><div class="element clickable method public __destruct" data-toggle="collapse" data-target=".__destruct .collapse">
+<h2>PHP magic method called when ending the script
+Used for outputing HTML</h2>
+<pre>__destruct() : void</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8"><p class="long_description"></p></div></div>
+</div>
+<a name="append_output" id="append_output"></a><div class="element clickable method public append_output" data-toggle="collapse" data-target=".append_output .collapse">
+<h2>Adds text to the output buffer</h2>
+<pre>append_output(string $string) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$string</h4>
+<code>string</code>
+</div>
+</div></div>
+</div>
+<a name="build_footer" id="build_footer"></a><div class="element clickable method public build_footer" data-toggle="collapse" data-target=".build_footer .collapse">
+<h2>Builds common footer with any additional js</h2>
+<pre>build_footer() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8"><p class="long_description"></p></div></div>
+</div>
+<a name="build_header" id="build_header"></a><div class="element clickable method public build_header" data-toggle="collapse" data-target=".build_header .collapse">
+<h2>Sets custom page header</h2>
+<pre>build_header(bool $html5) : <a href="../classes/miniMVC.Page.html">\miniMVC\Page</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$html5</h4>
+<code>bool</code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/miniMVC.Page.html">\miniMVC\Page</a></code></div>
+</div></div>
+</div>
+<a name="flush_headers" id="flush_headers"></a><div class="element clickable method public flush_headers" data-toggle="collapse" data-target=".flush_headers .collapse">
+<h2>Sends headers and then removes them</h2>
+<pre>flush_headers() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8"><p class="long_description"></p></div></div>
+</div>
+<a name="load_view" id="load_view"></a><div class="element clickable method public load_view" data-toggle="collapse" data-target=".load_view .collapse">
+<h2>Function for loading a view</h2>
+<pre>load_view(string $file, array $data, bool $return) : mixed</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$file</h4>
+<code>string</code>
+</div>
+<div class="subelement argument">
+<h4>$data</h4>
+<code>array</code>
+</div>
+<div class="subelement argument">
+<h4>$return</h4>
+<code>bool</code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code>mixed</code></div>
+</div></div>
+</div>
+<a name="output_string" id="output_string"></a><div class="element clickable method public output_string" data-toggle="collapse" data-target=".output_string .collapse">
+<h2>Output String</h2>
+<pre>output_string(string $string) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"><p>Similar to render(), this is a shortcut
+to output a string in the body of the
+page.</p></p>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$string</h4>
+<code>string</code>
+</div>
+</div></div>
+</div>
+<a name="redirect_303" id="redirect_303"></a><div class="element clickable method public redirect_303" data-toggle="collapse" data-target=".redirect_303 .collapse">
+<h2>Redirect 303</h2>
+<pre>redirect_303(string $url) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"><p>Shortcut function for 303 redirect</p></p>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$url</h4>
+<code>string</code>
+</div>
+</div></div>
+</div>
+<a name="render" id="render"></a><div class="element clickable method public render" data-toggle="collapse" data-target=".render .collapse">
+<h2>Render</h2>
+<pre>render(string $view, array $data) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"><p>Shortcut function for building a page</p></p>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$view</h4>
+<code>string</code>
+</div>
+<div class="subelement argument">
+<h4>$data</h4>
+<code>array</code>
+</div>
+</div></div>
+</div>
+<a name="set_base" id="set_base"></a><div class="element clickable method public set_base" data-toggle="collapse" data-target=".set_base .collapse">
+<h2>Sets custom base href</h2>
+<pre>set_base(string $href) : <a href="../classes/miniMVC.Page.html">\miniMVC\Page</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$href</h4>
+<code>string</code><p>href</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/miniMVC.Page.html">\miniMVC\Page</a></code></div>
+</div></div>
+</div>
+<a name="set_body_class" id="set_body_class"></a><div class="element clickable method public set_body_class" data-toggle="collapse" data-target=".set_body_class .collapse">
+<h2>Sets custom body class</h2>
+<pre>set_body_class(string $class) : <a href="../classes/miniMVC.Page.html">\miniMVC\Page</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$class</h4>
+<code>string</code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/miniMVC.Page.html">\miniMVC\Page</a></code></div>
+</div></div>
+</div>
+<a name="set_body_id" id="set_body_id"></a><div class="element clickable method public set_body_id" data-toggle="collapse" data-target=".set_body_id .collapse">
+<h2>Sets custom body id</h2>
+<pre>set_body_id(string $id) : <a href="../classes/miniMVC.Page.html">\miniMVC\Page</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$id</h4>
+<code>string</code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/miniMVC.Page.html">\miniMVC\Page</a></code></div>
+</div></div>
+</div>
+<a name="set_css_group" id="set_css_group"></a><div class="element clickable method public set_css_group" data-toggle="collapse" data-target=".set_css_group .collapse">
+<h2>Sets a minified css group</h2>
+<pre>set_css_group(string $group) : <a href="../classes/miniMVC.Page.html">\miniMVC\Page</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$group</h4>
+<code>string</code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/miniMVC.Page.html">\miniMVC\Page</a></code></div>
+</div></div>
+</div>
+<a name="set_css_tag" id="set_css_tag"></a><div class="element clickable method public set_css_tag" data-toggle="collapse" data-target=".set_css_tag .collapse">
+<h2>Sets custom css tags</h2>
+<pre>set_css_tag(string $name, bool $domain, string $media) : <a href="../classes/miniMVC.Page.html">\miniMVC\Page</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$name</h4>
+<code>string</code>
+</div>
+<div class="subelement argument">
+<h4>$domain</h4>
+<code>bool</code>
+</div>
+<div class="subelement argument">
+<h4>$media</h4>
+<code>string</code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/miniMVC.Page.html">\miniMVC\Page</a></code></div>
+</div></div>
+</div>
+<a name="set_foot_js_group" id="set_foot_js_group"></a><div class="element clickable method public set_foot_js_group" data-toggle="collapse" data-target=".set_foot_js_group .collapse">
+<h2>Sets a minified javascript group for the page footer</h2>
+<pre>set_foot_js_group(string $group, bool $debug) : <a href="../classes/miniMVC.Page.html">\miniMVC\Page</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$group</h4>
+<code>string</code>
+</div>
+<div class="subelement argument">
+<h4>$debug</h4>
+<code>bool</code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/miniMVC.Page.html">\miniMVC\Page</a></code></div>
+</div></div>
+</div>
+<a name="set_head_js_group" id="set_head_js_group"></a><div class="element clickable method public set_head_js_group" data-toggle="collapse" data-target=".set_head_js_group .collapse">
+<h2>Sets minified javascript group in header</h2>
+<pre>set_head_js_group(string $group, bool $debug) : <a href="../classes/miniMVC.Page.html">\miniMVC\Page</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$group</h4>
+<code>string</code>
+</div>
+<div class="subelement argument">
+<h4>$debug</h4>
+<code>bool</code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/miniMVC.Page.html">\miniMVC\Page</a></code></div>
+</div></div>
+</div>
+<a name="set_head_tag" id="set_head_tag"></a><div class="element clickable method public set_head_tag" data-toggle="collapse" data-target=".set_head_tag .collapse">
+<h2>Sets a custom tag in the header</h2>
+<pre>set_head_tag(string $tag) : <a href="../classes/miniMVC.Page.html">\miniMVC\Page</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$tag</h4>
+<code>string</code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/miniMVC.Page.html">\miniMVC\Page</a></code></div>
+</div></div>
+</div>
+<a name="set_header" id="set_header"></a><div class="element clickable method public set_header" data-toggle="collapse" data-target=".set_header .collapse">
+<h2>Sets a header for later output</h2>
+<pre>set_header(string $key, string $val) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$key</h4>
+<code>string</code>
+</div>
+<div class="subelement argument">
+<h4>$val</h4>
+<code>string</code>
+</div>
+</div></div>
+</div>
+<a name="set_message" id="set_message"></a><div class="element clickable method public set_message" data-toggle="collapse" data-target=".set_message .collapse">
+<h2>Set Message</h2>
+<pre>set_message(string $type, string $message, bool $return) : void</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"><p>Adds a message to the page</p></p>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$type</h4>
+<code>string</code>
+</div>
+<div class="subelement argument">
+<h4>$message</h4>
+<code>string</code>
+</div>
+<div class="subelement argument">
+<h4>$return</h4>
+<code>bool</code>
+</div>
+</div></div>
+</div>
+<a name="set_meta" id="set_meta"></a><div class="element clickable method public set_meta" data-toggle="collapse" data-target=".set_meta .collapse">
+<h2>Set Meta</h2>
+<pre>set_meta(array $meta) : <a href="../classes/miniMVC.Page.html">\miniMVC\Page</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"><p>Sets meta tags, with codeigniter native meta tag helper</p></p>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$meta</h4>
+<code>array</code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/miniMVC.Page.html">\miniMVC\Page</a></code></div>
+</div></div>
+</div>
+<a name="set_output" id="set_output"></a><div class="element clickable method public set_output" data-toggle="collapse" data-target=".set_output .collapse">
+<h2>Sets the output buffer</h2>
+<pre>set_output(string $string) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$string</h4>
+<code>string</code>
+</div>
+</div></div>
+</div>
+<a name="set_title" id="set_title"></a><div class="element clickable method public set_title" data-toggle="collapse" data-target=".set_title .collapse">
+<h2>Sets html title string</h2>
+<pre>set_title(string $title) : <a href="../classes/miniMVC.Page.html">\miniMVC\Page</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$title</h4>
+<code>string</code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/miniMVC.Page.html">\miniMVC\Page</a></code></div>
+</div></div>
+</div>
+<a name="_headers" id="_headers"></a><div class="element clickable method private _headers" data-toggle="collapse" data-target="._headers .collapse">
+<h2>Sets server headers and doctype</h2>
+<pre>_headers(bool $html5) : <a href="../classes/miniMVC.Page.html">\miniMVC\Page</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"><p>Also sets page mime type, based on if sent as
+html or xhtml, and what the target browser
+supports</p></p>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$html5</h4>
+<code>bool</code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/miniMVC.Page.html">\miniMVC\Page</a></code></div>
+</div></div>
+</div>
+<a name="_link_tag" id="_link_tag"></a><div class="element clickable method private _link_tag" data-toggle="collapse" data-target="._link_tag .collapse">
+<h2>Private helper function to generate link tags</h2>
+<pre>_link_tag(array $params) : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$params</h4>
+<code>array</code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a name="_meta" id="_meta"></a><div class="element clickable method private _meta" data-toggle="collapse" data-target="._meta .collapse">
+<h2>Private helper function to generate meta tags</h2>
+<pre>_meta(array $params) : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$params</h4>
+<code>array</code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a name="script_tag" id="script_tag"></a><div class="element clickable method private script_tag" data-toggle="collapse" data-target=".script_tag .collapse">
+<h2>Script Tag</h2>
+<pre>script_tag(string $js, bool $domain) : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"><p>Helper function for making script tags</p></p>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$js</h4>
+<code>string</code>
+</div>
+<div class="subelement argument">
+<h4>$domain</h4>
+<code>bool</code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<h3>
+<i class="icon-custom icon-property"></i> Properties</h3>
+<a name="%24base" id="$base"> </a><div class="element clickable property private $base" data-toggle="collapse" data-target=".$base .collapse">
+<h2>Base tag</h2>
+<pre>$base : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8"><p class="long_description"></p></div></div>
+</div>
+<a name="%24body_class" id="$body_class"> </a><div class="element clickable property private $body_class" data-toggle="collapse" data-target=".$body_class .collapse">
+<h2>Class(es) to apply to the main body tag</h2>
+<pre>$body_class : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8"><p class="long_description"></p></div></div>
+</div>
+<a name="%24body_id" id="$body_id"> </a><div class="element clickable property private $body_id" data-toggle="collapse" data-target=".$body_id .collapse">
+<h2>Id to apply to the body tag</h2>
+<pre>$body_id : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8"><p class="long_description"></p></div></div>
+</div>
+<a name="%24buffer" id="$buffer"> </a><div class="element clickable property private $buffer" data-toggle="collapse" data-target=".$buffer .collapse">
+<h2>Content for outputting</h2>
+<pre>$buffer : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8"><p class="long_description"></p></div></div>
+</div>
+<a name="%24css" id="$css"> </a><div class="element clickable property private $css" data-toggle="collapse" data-target=".$css .collapse">
+<h2>CSS tags for the page</h2>
+<pre>$css : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8"><p class="long_description"></p></div></div>
+</div>
+<a name="%24foot_js" id="$foot_js"> </a><div class="element clickable property private $foot_js" data-toggle="collapse" data-target=".$foot_js .collapse">
+<h2>JS tags for the footer</h2>
+<pre>$foot_js : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8"><p class="long_description"></p></div></div>
+</div>
+<a name="%24head_js" id="$head_js"> </a><div class="element clickable property private $head_js" data-toggle="collapse" data-target=".$head_js .collapse">
+<h2>JS tags for the header</h2>
+<pre>$head_js : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8"><p class="long_description"></p></div></div>
+</div>
+<a name="%24head_tags" id="$head_tags"> </a><div class="element clickable property private $head_tags" data-toggle="collapse" data-target=".$head_tags .collapse">
+<h2>Additional header tags</h2>
+<pre>$head_tags : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8"><p class="long_description"></p></div></div>
+</div>
+<a name="%24headers" id="$headers"> </a><div class="element clickable property private $headers" data-toggle="collapse" data-target=".$headers .collapse">
+<h2>HTTP headers to send</h2>
+<pre>$headers : array</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8"><p class="long_description"></p></div></div>
+</div>
+<a name="%24meta" id="$meta"> </a><div class="element clickable property private $meta" data-toggle="collapse" data-target=".$meta .collapse">
+<h2>Meta tags</h2>
+<pre>$meta : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8"><p class="long_description"></p></div></div>
+</div>
+<a name="%24title" id="$title"> </a><div class="element clickable property private $title" data-toggle="collapse" data-target=".$title .collapse">
+<h2>Page title</h2>
+<pre>$title : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8"><p class="long_description"></p></div></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><footer class="span12">
+            Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
+            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.0.0a2</a> and<br>
+            generated on 2012-07-03T13:29:42-04:00.<br></footer></div>
+</div>
+</body>
+</html>
